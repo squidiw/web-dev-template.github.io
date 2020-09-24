@@ -7,7 +7,7 @@ header {
   .number {
     display: flex;
     justify-content: center;
-    font-family: "Alice";
+    font-family: 'Alice', serif;
     font-size: 1.5em;
     font-weight: bold;
     color: #457b9d;
@@ -22,7 +22,7 @@ header {
     height: 550px;
     text-transform: uppercase;
     position: relative;
-    font-family: "Alice";
+    font-family: 'Alice', serif;
     color: #f1faee;
 
     .top-text {
@@ -30,7 +30,7 @@ header {
     }
 
     .middle-text {
-      font-family: "Sacremento";
+      font-family: 'Sacramento', cursive;
       font-size: 6vw;
       position: absolute;
       margin-top: 7px;

@@ -5,7 +5,7 @@
     .portfolio-inner{
   
       .title h4{
-        font-family: $p-font;
+        font-family: 'Alice', serif;
         color: #457b9d;
         font-size: 1.5rem;
         font-weight: bold;
@@ -13,7 +13,7 @@
       }
   
       .title h1{
-        font-family: $p-font;
+        font-family: 'Alice', serif;
         text-align: right;
         color: #f1faee;
         font-size: 3em;
@@ -44,7 +44,7 @@
   
         .text{
           color: #1d3557;
-          font-family: $p-font;
+          font-family: 'Alice', serif;
           font-size: 1em;
           font-weight: bold;
   
@@ -72,7 +72,7 @@
         }
         
         .i{
-          padding-top: 150px;
+          padding-top: 10px;
         }
       }
     }
