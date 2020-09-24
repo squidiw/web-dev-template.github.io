@@ -9,16 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Alice', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  src: url(../fonts/Alice-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Sacremento', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  src: url(../fonts/Sacramento-Regular.ttf);
-}
-
 header {
   height: 100vh;
   width: 100%;
@@ -29,7 +19,7 @@ header {
 header .number {
   display: flex;
   justify-content: center;
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   font-size: 1.5em;
   font-weight: bold;
   color: #457b9d;
@@ -44,7 +34,7 @@ header .header--text {
   height: 550px;
   text-transform: uppercase;
   position: relative;
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   color: #f1faee;
 }
 
@@ -53,7 +43,7 @@ header .header--text .top-text {
 }
 
 header .header--text .middle-text {
-  font-family: "Sacremento";
+  font-family: 'Sacramento', cursive;
   font-size: 6vw;
   position: absolute;
   margin-top: 7px;
@@ -99,14 +89,14 @@ header .header--text .bottom-text {
 }
 
 .flex-container .right .title-text h1 {
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   color: #a8dadc;
   font-size: 3.5vw;
   text-transform: uppercase;
 }
 
 .flex-container .right .title-text h2 {
-  font-family: "Sacremento";
+  font-family: 'Sacramento', cursive;
   color: #457b9d;
   font-size: 3.2vw;
   margin-top: -5px;
@@ -124,7 +114,7 @@ header .header--text .bottom-text {
 
 .flex-container .right .second-text h3 {
   color: #a8dadc;
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   text-transform: uppercase;
   font-size: 3.5vw;
 }
@@ -134,7 +124,7 @@ header .header--text .bottom-text {
   font-weight: bold;
   padding-right: 16px;
   text-align: right;
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   font-size: 1.7vw;
   text-transform: capitalize;
 }
@@ -263,7 +253,7 @@ header .header--text .bottom-text {
 }
 
 .portfolio-wrapper .portfolio-inner .title h4 {
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   color: #457b9d;
   font-size: 1.5rem;
   font-weight: bold;
@@ -271,7 +261,7 @@ header .header--text .bottom-text {
 }
 
 .portfolio-wrapper .portfolio-inner .title h1 {
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   text-align: right;
   color: #f1faee;
   font-size: 3em;
@@ -303,7 +293,7 @@ header .header--text .bottom-text {
 
 .portfolio-wrapper .portfolio-inner .portfolio-content .text {
   color: #1d3557;
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   font-size: 1em;
   font-weight: bold;
 }
@@ -330,7 +320,7 @@ header .header--text .bottom-text {
 }
 
 .portfolio-wrapper .portfolio-inner .portfolio-content .i {
-  padding-top: 150px;
+  margin-top: 40px;
 }
 
 @media (max-width: 600px) {
@@ -473,7 +463,7 @@ footer .inner-footer {
 }
 
 footer .inner-footer p {
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   text-transform: uppercase;
   font-size: 2em;
   font-weight: bold;
@@ -494,7 +484,7 @@ footer .inner-footer .icons a:hover {
 
 footer .inner-footer .end h6 {
   color: #a8dadc;
-  font-family: "Alice";
+  font-family: 'Alice', serif;
   font-size: 1em;
   padding-top: 10px;
   letter-spacing: 2px;
