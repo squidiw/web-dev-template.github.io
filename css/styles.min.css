@@ -161,21 +161,31 @@ header .header--text .bottom-text {
     display: none;
   }
   .flex-container .right .title-text h1 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .flex-container .right .title-text h2 {
-    font-size: 4.5vw;
+    font-size: 6.5vw;
+  }
+  .flex-container .right .second-text {
+    margin-top: 100px;
   }
   .flex-container .right .second-text .inner h3 {
-    font-size: 4.5vw;
+    font-size: 7vw;
   }
   .flex-container .right .second-text .inner p {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     text-align: center;
   }
   .flex-container .right .skills {
     display: grid;
-    grid-template-columns: repeat(4, 20px);
+    grid-template-columns: repeat(4, 50px);
+    justify-content: space-around;
+  }
+  .flex-container .right .skills .box {
+    margin-top: 30px;
+  }
+  .flex-container .right .skills .box img {
+    width: 55px;
   }
 }
 
