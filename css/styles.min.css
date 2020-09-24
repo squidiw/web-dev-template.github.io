@@ -9,6 +9,11 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Sacramento', cursive;
+  src: url(/fonts/Sacramento-Regular.ttf);
+}
+
 header {
   height: 100vh;
   width: 100%;
@@ -43,7 +48,7 @@ header .header--text .top-text {
 }
 
 header .header--text .middle-text {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Sacramento';
   font-size: 6vw;
   position: absolute;
   margin-top: 7px;

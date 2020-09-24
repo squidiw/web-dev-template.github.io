@@ -9,6 +9,11 @@ html{
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family: 'Sacramento', cursive;
+  src: url(/fonts/Sacramento-Regular.ttf)
+}
+
 @import 'header';
 @import 'about';
 @import 'portfolio';
