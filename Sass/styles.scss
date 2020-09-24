@@ -1,0 +1,91 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'fonts';
+@import 'header';
+@import 'about';
+@import 'portfolio';
+@import 'footer';
+
+
+
+// @mixin media-md {
+//   @media screen and (min-width: 768px) {
+//     @content;
+//   }
+// }
+// @mixin media-lg {
+//   @media screen and (min-width: 1024px) {
+//     @content;
+//   }
+// }
+// @mixin media-xl {
+//   @media screen and (min-width: 1600px) {
+//     @content;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 576px) {
+//   header{
+//     font-size: 0.45em;
+
+//     .number{
+//       font-size: 3em;
+//     }
+    
+//     .top-text{
+      
+//       &::after{
+        
+//       }
+//     }
+    
+//   }
+// }
+// @media (max-width: 768px) and (min-width:576px) {
+//   body{
+//     background-color: green;
+//   }
+// }
+// @media (max-width: 992px) and (min-width:768px) {
+//   body{
+//     background-color: hotpink;
+//   }
+// }
+// @media (max-width: 1200px) and (min-width:992px) {
+//   body{
+//     background-color: firebrick;
+//   }
+// }
+
+// @media (min-width:1200px) {
+//   body{
+//     background-color: dodgerblue;
+//   }
+// }
+
+

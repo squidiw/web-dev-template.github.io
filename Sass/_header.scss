@@ -1,0 +1,48 @@
+header {
+  height: 100vh;
+  width: 100%;
+  background-color: #a8dadc;
+  overflow-y: hidden;
+
+  .number {
+    display: flex;
+    justify-content: center;
+    font-family: "Alice";
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #457b9d;
+  }
+
+  .header--text {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Alice";
+    color: #f1faee;
+
+    .top-text {
+      font-size: 13vw;
+    }
+
+    .middle-text {
+      font-family: "Sacremento";
+      font-size: 6vw;
+      position: absolute;
+      margin-top: 7px;
+      color: #457b9d;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      z-index: 1000;
+    }
+
+    .bottom-text {
+      margin-top: -5px;
+      font-size: 13vw;
+    }
+  }
+}
