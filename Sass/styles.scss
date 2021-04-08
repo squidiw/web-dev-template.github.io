@@ -3,18 +3,19 @@ html{
   overflow-x: hidden;
 }
 
-* {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face{
-  font-family: 'Sacramento', cursive;
-  src: url(/fonts/Sacramento-Regular.ttf)
-}
-
+@import 'fonts';
 @import 'header';
 @import 'about';
 @import 'portfolio';
 @import 'footer';
+
+
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';

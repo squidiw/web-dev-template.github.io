@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts/f-awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/pointer.css">
-    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+        
 
     <!-- HEADER SECTION -->
     
@@ -18,64 +20,54 @@
         <span class="number">01.</span>
        <div class="header--text">
         <h1 class="top-text">koranteng</h1>
-        <h1 class="middle-text">web developer</h1>
+        <h3 class="middle-text">web developer</h3>
         <h1 class="bottom-text">anane</h1>
        </div>
     </header>
 
     <!-- ABOUT SECTION -->
-
-    <div class="flex-container">
-        <div class="left">
-          <img src="Imgs/bit-img-intro-1.png" />
-        </div>
-
-        <div class="right">
-          <div class="title-text">
-            <h1>koranteng anane</h1>
-            <h2>web developer</h2>
-          </div>
-          
-          
-            <div class="second-text">
-                <div class="inner">
-                    <h3>about me</h3>
-                    <p>i'm a front-end web developer.<br> below are the technologies that i use</p>
+    <section class="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-none d-md-block col-md-6 col-lg-6 col-xl-6" style="background-color: #1D3557; z-index: 1;">
+                    <img src="Imgs/bit-img-intro-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6 about-text">
+                    <div class="about-header">
+                        <div class="col-12">
+                            <h2>koranteng anane</h2>
+                            <h4>web developer</h4>
+                        </div>
+                    </div>
+    
+                    <div class="about-body">
+                        <div class="col-12">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda debitis numquam sit provident nam. Voluptatem unde provident earum distinctio impedit id, temporibus dolores non debitis magni autem fugiat excepturi quod.</p>
+                        </div>
+                    </div>
+    
+                    <div class="about-skills">
+                            <div class="col-12">
+                                <span class="skills d-flex justify-content-between" style="font-size: 1.3rem; color: #457b9d;">
+                                    <i class="fab fa-html5 pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-css3 pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-sass pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-js pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-bootstrap pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-php pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-react pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-wordpress pr-2" aria-hidden="true"></i>
+                                    <i class="fab fa-wix" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="skills">
-                <div class="box html">
-                    <img src="./Imgs/skills/html5.png" alt="">
-                </div>
-        
-                <div class="box css">
-                    <img src="./Imgs/skills/css.png" alt="">
-                </div>
-        
-                <div class="box sass">
-                    <img src="./Imgs/skills/sass.png" alt="">
-                </div>
-        
-                <div class="box js">
-                    <img src="./Imgs/skills/js.png" alt="">
-                </div>
-        
-                <div class="box react">
-                    <img src="./Imgs/skills/react.png" alt="">
-                </div>
-        
-                <div class="box wordpress">
-                    <img src="./Imgs/skills/wordpress.png" alt="">
-                </div>
-        
-                <div class="box wix">
-                    <img src="./Imgs/skills/wix.png" alt="">
-                </div>
-            </div>    
-
         </div>
-    </div>
+    </section>
+
+
+   
     <!-- PORTFOLIO SECTION -->
 
     <section class="portfolio-wrapper">
