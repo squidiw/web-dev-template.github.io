@@ -9,11 +9,12 @@ html{
   box-sizing: border-box;
 }
 
-@import 'fonts';
 @import 'header';
 @import 'about';
+@import 'offer';
 @import 'portfolio';
 @import 'footer';
+@import 'text';
 
 
 @import 'bootstrap/functions';

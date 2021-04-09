@@ -1,6 +1,6 @@
 
 .portfolio{
-  min-height:300vh;
+  min-height:50vh;
   display: flex;
 
   .portfolio-title{
@@ -21,29 +21,26 @@
   .portfolio-pages{
     
     & div{
-      height: 100vh;
+      
+      min-height: 60vh;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      // justify-content: space-evenly;
       align-items: center;
-      color: white;
+      color: black;
+
+      .img{
+        width: 20em;
+      }
 
       & > p{
         width: 80%;
       }
 
-      &:nth-child(1){
-        background-color: rgb(56, 134, 89);
-      }
-      &:nth-child(2){
-        background-color: rgb(129, 42, 110);
-      }
-      &:nth-child(3){
-        background-color: rgb(31, 88, 107);
-      }
-      &:nth-child(4){
-        background-color: rgb(129, 42, 110);
-      }
+    }
+
+    & .card {
+      background-color: #f1faee;
     }
   }
 }

@@ -1,49 +1,8 @@
 footer{
-    height: 30vh;
-    background-color: #1d3557;
+  min-height: 30vh  ;
+  // background-color: #dae1d8;
+  background-color: #a8dadc;
+  font-family: 'Alice', serif;
+  color: #1d3557;
+}
   
-    .inner-footer{
-      display: flex;
-      padding-top: 10vh;
-      align-items: center;
-      flex-flow: column nowrap;
-  
-      p{
-        font-family: 'Alice', serif;
-        text-transform: uppercase;
-        font-size: 2em;
-        font-weight: bold;
-        color: #a8dadc;
-        letter-spacing: 2px;
-        padding-bottom: 10px;
-      }
-  
-      .icons a{
-        color: #a8dadc;
-        padding: 0 5px;
-        transition: all 0.5s ease-out;
-  
-        &:hover{
-          color: #457b9d
-        }
-      }
-  
-      .end h6{
-        color: #a8dadc;
-        font-family: 'Alice', serif;
-        font-size: 1em;
-        padding-top: 10px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-    }
-  }
-  
-  @media (max-width:600px){
-
-    footer{
-      .inner-footer{
-        padding-top: 5vh;
-      }
-    }
-  }
