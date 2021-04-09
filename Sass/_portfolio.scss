@@ -3,6 +3,11 @@
   min-height:50vh;
   display: flex;
 
+  h3{
+    text-decoration: underline;
+  }
+ 
+
   .portfolio-title{
     height: 100vh;
     display: flex;
@@ -10,6 +15,8 @@
     justify-content: center;
     align-items: center;
     margin: 0 !important;
+
+    
 
     h3{
       text-transform: capitalize;
@@ -19,13 +26,33 @@
   }
 
   .portfolio-pages{
+
+    h2{
+      font-family: 'Sacramento';
+    }
+
+    & h5{
+      color:#2b5ea7;
+      text-decoration: underline;
+
+    }
+
+    & a{
+      text-decoration: none;
+      cursor: pointer;
+
+       p {
+         color:#1d3557;
+         letter-spacing: 1px;
+         text-transform: capitalize;
+      }
+    }
     
     & div{
       
-      min-height: 60vh;
+      min-height: 45vh;
       display: flex;
       flex-direction: column;
-      // justify-content: space-evenly;
       align-items: center;
       color: black;
 
@@ -44,176 +71,3 @@
     }
   }
 }
-   
-  
-  
-  // @media (max-width:600px){
-
-  //   .portfolio-wrapper{
-      
-  //     .portfolio-inner{
-
-  //       .portfolio-content{
-  //         display: flex;
-  //         flex-flow: column wrap;
-
-  //         .img{
-  //           display: flex;
-  //           justify-content: center;
-            
-  //           img{
-  //             width: 300px;
-  //           }
-  //         }
-
-  //         .text{
-  //           text-align: center;
-  //           padding: 10px 0 10px 0;
-  //         }
-
-  //         .e{
-  //           padding-top: 20px;
-  //         }
-
-  //         .h{
-  //           padding-top: 30px;
-  //         }
-
-  //         .i{
-  //           padding-top: 30px;
-  //           padding-bottom: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // @media (max-width:960px) and (min-width:601px){
-
-  //   .portfolio-wrapper{
-  //     height: 100vh;
-      
-  //     .portfolio-inner{
-
-  //       .portfolio-content{
-  //         display: grid;
-  //         grid-template-columns: repeat(3, 250px);
-  //         row-gap: 170px;
-  //         justify-content: space-around;
-
-  //         .img{
-  //           display: flex;
-  //           justify-content: center;
-            
-  //           img{
-  //             width: 250px;
-  //           }
-  //         }
-
-  //         .text{
-  //           text-align: center;
-  //           padding: 10px 0 10px 0;
-  //         }
-
-  //         .e{
-  //           padding-top: 20px;
-  //         }
-
-  //         .h{
-  //           padding-top: 30px;
-  //         }
-
-  //         .i{
-  //           padding-top: 30px;
-  //           padding-bottom: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @media (max-width:1280px) and (min-width:961px){
-
-  //   .portfolio-wrapper{
-  //     height: 100vh;
-      
-  //     .portfolio-inner{
-
-  //       .portfolio-content{
-  //         display: grid;
-  //         grid-template-columns: repeat(3, 350px);
-  //         row-gap: 170px;
-  //         justify-content: space-around;
-
-  //         .img{
-  //           display: flex;
-  //           justify-content: center;
-            
-  //           img{
-  //             width: 350px;
-  //           }
-  //         }
-
-  //         .text{
-  //           text-align: center;
-  //           padding: 10px 0 10px 0;
-  //         }
-
-  //         .e{
-  //           padding-top: 20px;
-  //         }
-
-  //         .h{
-  //           padding-top: 30px;
-  //         }
-
-  //         .i{
-  //           padding-top: 80px;
-  //           padding-bottom: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // @media (min-width:1281px){
-
-  //   .portfolio-wrapper{
-  //     height: 100vh;
-      
-  //     .portfolio-inner{
-
-  //       .portfolio-content{
-  //         display: grid;
-  //         grid-template-columns: repeat(3, 380px);
-  //         row-gap: 170px;
-  //         justify-content: space-around;
-
-  //         .img{
-  //           display: flex;
-  //           justify-content: center;
-            
-  //           img{
-  //             width: 400px;
-  //           }
-  //         }
-
-  //         .text{
-  //           text-align: center;
-  //           padding: 10px 0 10px 0;
-  //         }
-
-  //         .e{
-  //           padding-top: 20px;
-  //         }
-
-  //         .h{
-  //           padding-top: 30px;
-  //         }
-
-  //         .i{
-  //           padding-top: 80px;
-  //           padding-bottom: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }

@@ -60,11 +60,12 @@ header .header--text .bottom-text {
 
 .about {
   min-height: 50vh;
-  background-color: #f1faee;
+  background-color: #1d3557;
 }
 
 .about .about-text {
   padding: 1em 0.5em 0.5em 0.5em;
+  background-color: #f1faee;
 }
 
 .about .about-text .about-header h2 {
@@ -107,7 +108,8 @@ header .header--text .bottom-text {
 }
 
 .offer h4 {
-  color: #1d3557;
+  color: #457b9d;
+  text-decoration: underline;
 }
 
 .offer p {
@@ -117,6 +119,10 @@ header .header--text .bottom-text {
 .portfolio {
   min-height: 50vh;
   display: flex;
+}
+
+.portfolio h3 {
+  text-decoration: underline;
 }
 
 .portfolio .portfolio-title {
@@ -134,8 +140,28 @@ header .header--text .bottom-text {
   font-size: 1.5rem;
 }
 
+.portfolio .portfolio-pages h2 {
+  font-family: 'Sacramento';
+}
+
+.portfolio .portfolio-pages h5 {
+  color: #2b5ea7;
+  text-decoration: underline;
+}
+
+.portfolio .portfolio-pages a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-pages a p {
+  color: #1d3557;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
 .portfolio .portfolio-pages div {
-  min-height: 60vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,7 +184,13 @@ footer {
   min-height: 30vh;
   background-color: #a8dadc;
   font-family: 'Alice', serif;
+  font-size: 1.2rem;
   color: #1d3557;
+  text-align: center;
+}
+
+footer .fab, footer .fa {
+  color: #457b9d;
 }
 
 h2, h3 {
@@ -168,6 +200,7 @@ h2, h3 {
 
 h4 {
   font-family: 'Alice', serif;
+  text-transform: capitalize;
 }
 
 p {
@@ -181,4 +214,12 @@ p {
 
 .dark {
   color: #457B9D;
+}
+
+.number-right {
+  display: flex;
+  font-family: 'Alice', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #457b9d;
 }

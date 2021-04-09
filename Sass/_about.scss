@@ -1,10 +1,11 @@
 .about{
     min-height: 50vh;
-    background-color: #f1faee;
+    background-color: #1d3557;
     
     
     .about-text{
         padding: 1em 0.5em 0.5em 0.5em;
+        background-color: #f1faee;
 
         .about-header{
             h2{
@@ -22,7 +23,8 @@
                 margin-top: -18px;
             }
         }
-    
+        
+
         .about-body p {
             color: #457b9d;
             text-align: center;

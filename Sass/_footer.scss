@@ -1,8 +1,14 @@
 footer{
-  min-height: 30vh  ;
-  // background-color: #dae1d8;
+  min-height: 30vh;
   background-color: #a8dadc;
   font-family: 'Alice', serif;
+  font-size: 1.2rem;
   color: #1d3557;
+  text-align: center;
+
+  .fab, .fa{
+    color: #457b9d;
+  }
+
 }
   
