@@ -3,7 +3,7 @@
   min-height:50vh;
   display: flex;
 
-  h3{
+  h6{
     text-decoration: underline;
   }
  
@@ -68,6 +68,100 @@
 
     & .card {
       background-color: #f1faee;
+      width: 25em;
     }
   }
+}
+@media (min-width:768px) {
+  
+  .portfolio{
+
+    .portfolio-title{
+    
+
+      h3{
+       text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+  
+@media (min-width:1200px) {
+  .portfolio{
+   
+    .portfolio-title{
+
+  
+      h3{
+        text-transform: capitalize;
+        padding: 0.2em;
+        font-size: 1.5rem;
+      }
+    }
+  
+    .portfolio-pages{
+  
+      h2{
+        font-family: 'Sacramento';
+      }
+  
+      & h5{
+        color:#2b5ea7;
+        text-decoration: underline;
+  
+      }
+  
+      & a{
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.5s ease-in all;
+        overflow: hidden;
+
+        &:hover{
+          box-shadow: 1px 2px 23px -10px rgba(0,0,0,0.75);
+          -webkit-box-shadow: 1px 2px 23px -10px rgba(0,0,0,0.75);
+          -moz-box-shadow: 1px 2px 23px -10px rgba(0,0,0,0.75);
+
+          img{
+            transform:  scale(0.9);
+          }
+        }
+  
+         p {
+         
+           font-size: 1.1rem;
+        }
+      }
+
+      img{
+        transition: transform .5s ease;
+        overflow: hidden;
+      }
+      
+      & div{
+        
+        min-height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+  
+        .img{
+          width: 20em;
+        }
+  
+        & > p{
+          width: 90%;
+        }
+  
+      }
+  
+      & .card {
+        background-color: #f1faee;
+        width: 38em;
+      }
+    }
+  }
+
 }

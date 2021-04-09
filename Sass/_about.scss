@@ -37,3 +37,69 @@
         }
     }
 }
+
+@media (min-width:992px) {
+    .about{   
+        
+        .about-text{
+           
+    
+            .about-header{
+                h2{
+                    font-size: 2.9rem;
+                }
+        
+                h4{
+                   font-size: 2.5rem;
+                }
+            }
+            
+    
+             .about-body p {
+                font-size: 1.5rem;
+             }
+    
+            .about-skills{
+
+                i{
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:1200px) {
+    .about{   
+        
+        .about-text{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+    
+            .about-header{
+                h2{
+                    font-size: 3.4rem;
+                }
+        
+                h4{
+                   font-size: 2.8rem;
+                }
+            }
+            
+    
+             .about-body p {
+                font-size: 1.5rem;
+             }
+    
+            .about-skills{
+                padding-top: 3em;
+                i{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+}
