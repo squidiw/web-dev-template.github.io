@@ -8,7 +8,7 @@
     top: 0;
     width: 0;
     height: 0;
-    border: 2.5px solid #F1FAEE;
+    border: 4px solid #ebe88b;
     position: fixed;
     border-radius: 4px;
     z-index: 1;
@@ -21,7 +21,7 @@
     top: 0;
     width: 0;
     height: 0;
-    padding: 15px;
+    padding: 18px;
     border: 2px solid #457B9D;
     position: fixed;
     border-radius: 100px;
