@@ -1,28 +1,135 @@
 footer{
-  min-height: 30vh;
-  background-color: #a8dadc;
-  font-family: 'Alice', serif;
-  font-size: 1.2rem;
-  color: #1d3557;
-  text-align: center;
+min-height: 35vh;
+margin-top: 4em;
 
-  .fab, .fa{
-    color: #457b9d;
-    text-decoration: none;
+.footer-header{
+  color: #17A2B8;
+  font-family: $font-medium;
+  text-transform: capitalize;
+}
 
+.footer-body{
+  color: #17A2B8;
+  font-family: $font-regular;
+  text-transform: capitalize;
+
+  p{
+    padding-left: 5em;
+  }
+}
+
+.email{
+  font-family: $font-medium;
+  
+  a{
+    color: #17A2B8;
   }
 
-  
 
 }
 
-@media (min-width:768px) {
-  footer{
-    font-size: 1.4rem;
+  .title-line {
+    text-align: center;
+    margin-top: -10px;
+    .tl-1 {
+       width: 90px;
+       height: 1px;
+       display: inline-block;
+       background: #707070;
+    }
+    .tl-2 {
+       display: inline-block;
+       height: 12px;
+       margin: 0 5px;
+       position: relative;
+       width: 12px;
+       border: 1px solid #1D3557;
+       background-color: #1D3557;
+       border-radius: 50px;
+       top: 5px;
+    }
+    .tl-3 {
+       width: 90px;
+       height: 1px;
+       display: inline-block;
+       background: #707070;
+    }
+ }
 
-    .fab, .fa{
-      font-size: 1.4em;
+ .social-icons{
+   font-size: 1.5rem;
+   color: #17A2B8;
+   display: flex;
+   justify-content: space-around;
+   margin: 1em;
+ }
+ 
+
+@include media-md{
+  .footer-header{
+    h1{
+      font-size: 3.7rem;
     }
   }
-}
   
+  .footer-body{
+    color: #17A2B8;
+    font-family: $font-regular;
+    text-transform: capitalize;
+  
+    p{
+      padding-left: 5em;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .email{
+    font-family: $font-medium;
+    
+    a{
+      color: #17A2B8;
+      font-size: 2rem;
+    }
+  
+  
+  }
+  
+    .title-line {
+      text-align: center;
+      margin-top: -10px;
+      .tl-1 {
+         width: 90px;
+         height: 1px;
+         display: inline-block;
+         background: #707070;
+      }
+      .tl-2 {
+         display: inline-block;
+         height: 12px;
+         margin: 0 5px;
+         position: relative;
+         width: 12px;
+         border: 1px solid #1D3557;
+         background-color: #1D3557;
+         border-radius: 50px;
+         top: 5px;
+      }
+      .tl-3 {
+         width: 90px;
+         height: 1px;
+         display: inline-block;
+         background: #707070;
+      }
+   }
+  
+   .social-icons{
+     font-size: 1.8rem;
+     color: #17A2B8;
+     display: flex;
+     justify-content: space-around;
+     margin: 1em;
+   }
+  
+}
+
+}

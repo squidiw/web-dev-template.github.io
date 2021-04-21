@@ -1,103 +1,135 @@
 .about{
     min-height: 50vh;
-    background-color: #1d3557;
-    
+
+    .about-headline{
+        display: flex;
+        justify-content: space-between;
+        background-color: #a8dadc;
+        margin: 0;
+        color: #457B9D;
+        font-family: $font-regular;
+      }
+      
     
     .about-text{
-        padding: 1em 0.5em 0.5em 0.5em;
-        background-color: #f1faee;
+        font-family: $font-regular;
+        background-color: #a8dadc;
 
         .about-header{
-            h2{
-                text-align: center;
-                font-family: 'Alice', serif;
-                text-transform: uppercase;
-                color: #a8dadc;
+            line-height: 1.2;
+            margin-top: 1.5em;
+            font-family: $font-medium;
+            span.light{
+                color: #F1FAEE;
+                font-size: 1.5rem;
             }
     
-            h4{
+            span.dark{
                 color: #457b9d;
-                text-align: center;
-                font-family: 'Sacramento', cursive;
-                font-size: 2.3rem;
-                margin-top: -18px;
+                font-size: 1.8rem;
+                padding-left: 1.5em;
+            }
+
+            .dark, .light{
+                text-transform: capitalize;
             }
         }
         
 
-        .about-body p {
-            color: #457b9d;
-            text-align: center;
-            font-family: 'Alice';
-            letter-spacing: 1px;
+        .about-body{
+            padding: 1em;
+            p{
+                color: #1D3557;
+                font-family: $font-regular;
+                // letter-spacing: 1px;
+                text-align: end;
+            }
         }
 
         .about-skills{
             padding-top: 2em;
+            padding-bottom: 1.1em;
+
+            .skills{
+                i {
+                    font-size: 1.3rem;
+            }
         }
     }
 }
 
-@media (min-width:992px) {
-    .about{   
-        
-        .about-text{
-           
-    
-            .about-header{
-                h2{
-                    font-size: 2.9rem;
-                }
-        
-                h4{
-                   font-size: 2.5rem;
-                }
-            }
+@include media-md {
+        .about{
+            min-height: 50vh;
             
-    
-             .about-body p {
-                font-size: 1.5rem;
-             }
-    
-            .about-skills{
+            .about-text{
+            
+                .about-header{
+                    
+                    span.light{ 
+                        font-size: 3rem;
+                    }
+            
+                    span.dark{
+                        font-size: 3rem;
+                        padding-left: 3em;
+                    }
+                }
+                
+                .about-body{
+                    padding: 1em;
+                    p{
+                        color: #1D3557;
+                        font-family: $font-regular;
+                        text-align: center;
+                    }
+                }
+        
+                .about-skills{
+                    padding-top: 2em;
+                    padding-bottom: 1.1em;
 
-                i{
-                    font-size: 1.7em;
+                    
                 }
             }
         }
-    }
+            
 
+    }
 }
 
-@media (min-width:1200px) {
-    .about{   
+@include media-lg {
+    .about{
+        min-height: 50vh;
         
         .about-text{
-           display: flex;
-           flex-direction: column;
-           justify-content: space-evenly;
-    
+        
             .about-header{
-                h2{
-                    font-size: 3.4rem;
+                
+                span.light{ 
+                    font-size: 3.8rem;
                 }
         
-                h4{
-                   font-size: 2.8rem;
+                span.dark{
+                    font-size: 3.8rem;
+                    padding-left: 8em;
                 }
             }
             
-    
-             .about-body p {
-                font-size: 1.5rem;
-             }
+            .about-body{
+                padding: 1em;
+                p{
+                    color: #1D3557;
+                    font-family: $font-regular;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+            }
     
             .about-skills{
-                padding-top: 3em;
-                i{
-                    font-size: 1.5em;
-                }
+                padding-top: 2em;
+                padding-bottom: 1.1em;
+
             }
         }
     }

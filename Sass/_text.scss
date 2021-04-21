@@ -1,15 +1,8 @@
-h2,h3{
-    font-family: 'Alice', serif;
-    text-transform: capitalize;
-}
-
-h4{
-    font-family: 'Alice', serif;
+h2,h3,h4{
     text-transform: capitalize;
 }
 
 p{
-    font-family: 'Alice', serif;
     letter-spacing: 1px;
 }
 
@@ -23,7 +16,6 @@ p{
 
 .number-right {
     display: flex;
-    font-family: 'Alice', serif;
     font-size: 1.5em;
     font-weight: bold;
     color: #457b9d;
