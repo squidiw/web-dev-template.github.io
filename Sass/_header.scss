@@ -20,24 +20,22 @@ header {
     
       .links{
           display: flex;
-          justify-content: space-around;
           
           a{
               font-family: $font-medium;
-            //   color: #457b9d;
               color: #f1faee;
-              font-size: 16px;
-              border-radius: 100%;
+              font-size: 14px;
+              border-radius: 50%;
               background-color: #457b9d;
-              padding: 30px;
+              padding: 20px;
               transition: all .5s ease-out;
-              
-
+            
               &:hover{
                   color: #457b9d;
                   background-color: #f1faee;
               }
           }
+
       }
   }
 

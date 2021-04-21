@@ -1,5 +1,5 @@
 .about{
-    min-height: 100vh;
+    min-height: 50vh;
 
     .about-headline{
         display: flex;
@@ -56,23 +56,27 @@
             }
         }
     }
+
+    .underline{
+        text-decoration: underline;
+    }
 }
 
 @include media-md {
         .about{
-            min-height: 100vh;
+            min-height: 50vh;
             
             .about-text{
             
                 .about-header{
                     
                     span.light{ 
-                        font-size: 3rem;
+                        font-size: 3.5rem;
                     }
             
                     span.dark{
-                        font-size: 3rem;
-                        padding-left: 3em;
+                        font-size: 1rem;
+                        padding-left: 5em;
                     }
                 }
                 
@@ -100,19 +104,19 @@
 
 @include media-lg {
     .about{
-        min-height: 100vh;
+        min-height: 40vh;
         
         .about-text{
         
             .about-header{
                 
                 span.light{ 
-                    font-size: 3.8rem;
+                    font-size: 3.2rem;
                 }
         
                 span.dark{
-                    font-size: 3.8rem;
-                    padding-left: 8em;
+                    font-size: 3.6rem;
+                    padding-left: 6em;
                 }
             }
             
@@ -122,7 +126,8 @@
                     color: #1D3557;
                     font-family: $font-regular;
                     text-align: center;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
+                    
                 }
             }
     
@@ -133,5 +138,7 @@
             }
         }
     }
+
+
 
 }
