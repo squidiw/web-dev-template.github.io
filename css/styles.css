@@ -49,14 +49,22 @@ header .navbar .navbar-name {
 
 header .navbar .links {
   display: flex;
-  justify-content: space-between;
-  width: 140px;
+  justify-content: space-around;
 }
 
 header .navbar .links a {
   font-family: "Poppins-Medium";
-  color: #457b9d;
+  color: #f1faee;
   font-size: 16px;
+  border-radius: 100%;
+  background-color: #457b9d;
+  padding: 30px;
+  transition: all .5s ease-out;
+}
+
+header .navbar .links a:hover {
+  color: #457b9d;
+  background-color: #f1faee;
 }
 
 header .header-text {
@@ -221,7 +229,7 @@ header .header-text .bottom-text {
 }
 
 .about {
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 .about .about-headline {
@@ -280,7 +288,7 @@ header .header-text .bottom-text {
 
 @media screen and (min-width: 768px) {
   .about .about {
-    min-height: 50vh;
+    min-height: 100vh;
   }
   .about .about .about-text .about-header span.light {
     font-size: 3rem;
@@ -305,7 +313,7 @@ header .header-text .bottom-text {
 
 @media screen and (min-width: 1024px) {
   .about {
-    min-height: 50vh;
+    min-height: 100vh;
   }
   .about .about-text .about-header span.light {
     font-size: 3.8rem;
@@ -498,7 +506,7 @@ header .header-text .bottom-text {
 }
 
 footer {
-  min-height: 35vh;
+  min-height: 30vh;
   margin-top: 4em;
 }
 
@@ -563,6 +571,11 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   margin: 1em;
+}
+
+footer .copyright h6 {
+  color: #17A2B8;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {

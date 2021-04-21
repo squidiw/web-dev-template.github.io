@@ -18,9 +18,9 @@ splitScroll();
 
 
 // SET YEAR IN COPYRIGHT
-let copyrightDate = document.getElementById("copyrightDate");
 
-let date = new Date();
+const copyrightYear = document.querySelector('#copyrightDate');
+let date =  new Date();
 let currentYear = date.getFullYear();
 
-copyrightDate.innerHTML = currentYear;
+copyrightYear.innerHTML = currentYear

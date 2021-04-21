@@ -1,5 +1,5 @@
 .about{
-    min-height: 50vh;
+    min-height: 100vh;
 
     .about-headline{
         display: flex;
@@ -60,7 +60,7 @@
 
 @include media-md {
         .about{
-            min-height: 50vh;
+            min-height: 100vh;
             
             .about-text{
             
@@ -100,7 +100,7 @@
 
 @include media-lg {
     .about{
-        min-height: 50vh;
+        min-height: 100vh;
         
         .about-text{
         
