@@ -9,23 +9,8 @@ html {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Poppins-Regular';
-  src: url("../fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Poppins-Medium';
-  src: url("../fonts/Poppins-Medium.ttf");
-}
-
-@font-face {
-  font-family: 'Poppins-Bold';
-  src: url("../fonts/Poppins-Bold.ttf");
-}
-
 header {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: #a8dadc;
   overflow-y: hidden;
@@ -34,78 +19,43 @@ header {
 header .number {
   display: flex;
   justify-content: center;
-  font-size: 1em;
+  font-family: 'Alice', serif;
+  font-size: 1.5em;
+  font-weight: bold;
   color: #457b9d;
 }
 
-header .navbar {
-  font-family: "Poppins-Regular";
-}
-
-header .navbar .navbar-name {
-  font-size: 14px;
-  color: #457b9d;
-}
-
-header .navbar .links {
-  display: flex;
-  justify-content: space-between;
-  width: 140px;
-}
-
-header .navbar .links a {
-  font-family: "Poppins-Medium";
-  color: #457b9d;
-  font-size: 16px;
-}
-
-header .header-text {
-  min-height: 60vh;
-  font-family: "Poppins-Medium";
+header .header--text {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 1em;
+  align-items: center;
+  height: 550px;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Alice', serif;
+  color: #f1faee;
+}
+
+header .header--text .top-text {
+  font-size: 13vw;
+}
+
+header .header--text .middle-text {
+  font-family: 'Sacramento', cursive;
+  font-size: 6vw;
+  position: absolute;
+  margin-top: 7px;
+  color: #457b9d;
   text-transform: capitalize;
+  letter-spacing: 2px;
+  z-index: 1000;
 }
 
-header .header-text .top-text {
-  color: #F1FAEE;
-}
-
-header .header-text .bottom-text {
-  color: #457B9D;
-}
-
-@media screen and (min-width: 768px) {
-  header .number {
-    font-size: 1.1em;
-  }
-  header .header-text {
-    min-height: 50vh;
-  }
-  header .header-text .top-text {
-    font-size: 4.4rem;
-  }
-  header .header-text .bottom-text {
-    font-size: 4.4rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  header .number {
-    font-size: 1.2em;
-  }
-  header .header-text {
-    min-height: 50vh;
-  }
-  header .header-text .top-text {
-    font-size: 6.2rem;
-  }
-  header .header-text .bottom-text {
-    font-size: 6.2rem;
-  }
+header .header--text .bottom-text {
+  margin-top: -5px;
+  font-size: 13vw;
 }
 
 .scroll-down-bounce {
@@ -179,7 +129,7 @@ header .header-text .bottom-text {
   opacity: 0;
   width: 100%;
   height: 100%;
-  border: 10px solid red;
+  border: 10px solid #64baff;
   border-radius: 100px;
   /* Giving Animation Function */
   -webkit-animation: pulse 1s linear infinite 0.4s;
@@ -222,110 +172,75 @@ header .header-text .bottom-text {
 
 .about {
   min-height: 50vh;
-}
-
-.about .about-headline {
-  display: flex;
-  justify-content: space-between;
-  background-color: #a8dadc;
-  margin: 0;
-  color: #457B9D;
-  font-family: "Poppins-Regular";
+  background-color: #1d3557;
 }
 
 .about .about-text {
-  font-family: "Poppins-Regular";
-  background-color: #a8dadc;
+  padding: 1em 0.5em 0.5em 0.5em;
+  background-color: #f1faee;
 }
 
-.about .about-text .about-header {
-  line-height: 1.2;
-  margin-top: 1.5em;
-  font-family: "Poppins-Medium";
+.about .about-text .about-header h2 {
+  text-align: center;
+  font-family: 'Alice', serif;
+  text-transform: uppercase;
+  color: #a8dadc;
 }
 
-.about .about-text .about-header span.light {
-  color: #F1FAEE;
-  font-size: 1.5rem;
-}
-
-.about .about-text .about-header span.dark {
+.about .about-text .about-header h4 {
   color: #457b9d;
-  font-size: 1.8rem;
-  padding-left: 1.5em;
-}
-
-.about .about-text .about-header .dark, .about .about-text .about-header .light {
-  text-transform: capitalize;
-}
-
-.about .about-text .about-body {
-  padding: 1em;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 2.3rem;
+  margin-top: -18px;
 }
 
 .about .about-text .about-body p {
-  color: #1D3557;
-  font-family: "Poppins-Regular";
-  text-align: end;
+  color: #457b9d;
+  text-align: center;
+  font-family: 'Alice';
+  letter-spacing: 1px;
 }
 
 .about .about-text .about-skills {
   padding-top: 2em;
-  padding-bottom: 1.1em;
 }
 
-.about .about-text .about-skills .skills i {
-  font-size: 1.3rem;
-}
-
-@media screen and (min-width: 768px) {
-  .about .about {
-    min-height: 50vh;
+@media (min-width: 992px) {
+  .about .about-text .about-header h2 {
+    font-size: 2.9rem;
   }
-  .about .about .about-text .about-header span.light {
-    font-size: 3rem;
-  }
-  .about .about .about-text .about-header span.dark {
-    font-size: 3rem;
-    padding-left: 3em;
-  }
-  .about .about .about-text .about-body {
-    padding: 1em;
-  }
-  .about .about .about-text .about-body p {
-    color: #1D3557;
-    font-family: "Poppins-Regular";
-    text-align: center;
-  }
-  .about .about .about-text .about-skills {
-    padding-top: 2em;
-    padding-bottom: 1.1em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .about {
-    min-height: 50vh;
-  }
-  .about .about-text .about-header span.light {
-    font-size: 3.8rem;
-  }
-  .about .about-text .about-header span.dark {
-    font-size: 3.8rem;
-    padding-left: 8em;
-  }
-  .about .about-text .about-body {
-    padding: 1em;
+  .about .about-text .about-header h4 {
+    font-size: 2.5rem;
   }
   .about .about-text .about-body p {
-    color: #1D3557;
-    font-family: "Poppins-Regular";
-    text-align: center;
+    font-size: 1.5rem;
+  }
+  .about .about-text .about-skills i {
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .about .about-text .about-header h2 {
+    font-size: 3.4rem;
+  }
+  .about .about-text .about-header h4 {
+    font-size: 2.8rem;
+  }
+  .about .about-text .about-body p {
     font-size: 1.5rem;
   }
   .about .about-text .about-skills {
-    padding-top: 2em;
-    padding-bottom: 1.1em;
+    padding-top: 3em;
+  }
+  .about .about-text .about-skills i {
+    font-size: 1.5em;
   }
 }
 
@@ -353,18 +268,13 @@ header .header-text .bottom-text {
   text-transform: capitalize;
 }
 
-.portfolio-headline {
-  display: flex;
-  justify-content: space-between;
-  background-color: #a8dadc;
-  padding: 5px;
-  color: #457B9D;
-  font-family: "Poppins-Regular";
-}
-
 .portfolio {
   min-height: 50vh;
   display: flex;
+}
+
+.portfolio h6 {
+  text-decoration: underline;
 }
 
 .portfolio .portfolio-title {
@@ -382,12 +292,8 @@ header .header-text .bottom-text {
   font-size: 1.5rem;
 }
 
-.portfolio .portfolio-pages h3 {
-  font-family: "Poppins-Regular";
-}
-
-.portfolio .portfolio-pages h5, .portfolio .portfolio-pages p {
-  font-family: "Poppins-Regular";
+.portfolio .portfolio-pages h2 {
+  font-family: 'Sacramento';
 }
 
 .portfolio .portfolio-pages h5 {
@@ -404,7 +310,6 @@ header .header-text .bottom-text {
   color: #1d3557;
   letter-spacing: 1px;
   text-transform: capitalize;
-  font-size: 0.9rem;
 }
 
 .portfolio .portfolio-pages div {
@@ -420,38 +325,29 @@ header .header-text .bottom-text {
 }
 
 .portfolio .portfolio-pages div > p {
-  width: 90%;
+  width: 80%;
 }
 
 .portfolio .portfolio-pages .card {
-  background-color: #F1FAEE;
-  width: 22em;
+  background-color: #f1faee;
+  width: 25em;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio .portfolio-pages a p {
-    font-size: 1rem;
+@media (min-width: 768px) {
+  .portfolio .portfolio-title h3 {
     text-align: center;
-  }
-  .portfolio .portfolio-pages div {
-    min-height: 30vh;
-  }
-  .portfolio .portfolio-pages div > p {
-    width: 100%;
-  }
-  .portfolio .portfolio-pages .card {
-    width: 35em;
+    font-size: 1.2rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .portfolio .portfolio-title {
-    text-align: center;
-  }
+@media (min-width: 1200px) {
   .portfolio .portfolio-title h3 {
     text-transform: capitalize;
     padding: 0.2em;
     font-size: 1.5rem;
+  }
+  .portfolio .portfolio-pages h2 {
+    font-family: 'Sacramento';
   }
   .portfolio .portfolio-pages h5 {
     color: #2b5ea7;
@@ -479,7 +375,7 @@ header .header-text .bottom-text {
     overflow: hidden;
   }
   .portfolio .portfolio-pages div {
-    min-height: 40vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -498,134 +394,39 @@ header .header-text .bottom-text {
 }
 
 footer {
-  min-height: 35vh;
-  margin-top: 4em;
-}
-
-footer .footer-header {
-  color: #17A2B8;
-  font-family: "Poppins-Medium";
-  text-transform: capitalize;
-}
-
-footer .footer-body {
-  color: #17A2B8;
-  font-family: "Poppins-Regular";
-  text-transform: capitalize;
-}
-
-footer .footer-body p {
-  padding-left: 5em;
-}
-
-footer .email {
-  font-family: "Poppins-Medium";
-}
-
-footer .email a {
-  color: #17A2B8;
-}
-
-footer .title-line {
+  min-height: 30vh;
+  background-color: #a8dadc;
+  font-family: 'Alice', serif;
+  font-size: 1.2rem;
+  color: #1d3557;
   text-align: center;
-  margin-top: -10px;
 }
 
-footer .title-line .tl-1 {
-  width: 90px;
-  height: 1px;
-  display: inline-block;
-  background: #707070;
+footer .fab, footer .fa {
+  color: #457b9d;
 }
 
-footer .title-line .tl-2 {
-  display: inline-block;
-  height: 12px;
-  margin: 0 5px;
-  position: relative;
-  width: 12px;
-  border: 1px solid #1D3557;
-  background-color: #1D3557;
-  border-radius: 50px;
-  top: 5px;
-}
-
-footer .title-line .tl-3 {
-  width: 90px;
-  height: 1px;
-  display: inline-block;
-  background: #707070;
-}
-
-footer .social-icons {
-  font-size: 1.5rem;
-  color: #17A2B8;
-  display: flex;
-  justify-content: space-around;
-  margin: 1em;
-}
-
-@media screen and (min-width: 768px) {
-  footer .footer-header h1 {
-    font-size: 3.7rem;
+@media (min-width: 768px) {
+  footer {
+    font-size: 1.4rem;
   }
-  footer .footer-body {
-    color: #17A2B8;
-    font-family: "Poppins-Regular";
-    text-transform: capitalize;
-  }
-  footer .footer-body p {
-    padding-left: 5em;
-    font-size: 1.2rem;
-  }
-  footer .email {
-    font-family: "Poppins-Medium";
-  }
-  footer .email a {
-    color: #17A2B8;
-    font-size: 2rem;
-  }
-  footer .title-line {
-    text-align: center;
-    margin-top: -10px;
-  }
-  footer .title-line .tl-1 {
-    width: 90px;
-    height: 1px;
-    display: inline-block;
-    background: #707070;
-  }
-  footer .title-line .tl-2 {
-    display: inline-block;
-    height: 12px;
-    margin: 0 5px;
-    position: relative;
-    width: 12px;
-    border: 1px solid #1D3557;
-    background-color: #1D3557;
-    border-radius: 50px;
-    top: 5px;
-  }
-  footer .title-line .tl-3 {
-    width: 90px;
-    height: 1px;
-    display: inline-block;
-    background: #707070;
-  }
-  footer .social-icons {
-    font-size: 1.8rem;
-    color: #17A2B8;
-    display: flex;
-    justify-content: space-around;
-    margin: 1em;
+  footer .fab, footer .fa {
+    font-size: 1.4em;
   }
 }
 
-h2, h3, h4 {
+h2, h3 {
+  font-family: 'Alice', serif;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: 'Alice', serif;
   text-transform: capitalize;
 }
 
 p {
+  font-family: 'Alice', serif;
   letter-spacing: 1px;
 }
 
@@ -639,6 +440,7 @@ p {
 
 .number-right {
   display: flex;
+  font-family: 'Alice', serif;
   font-size: 1.5em;
   font-weight: bold;
   color: #457b9d;
