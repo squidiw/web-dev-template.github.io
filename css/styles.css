@@ -49,15 +49,16 @@ header .navbar .navbar-name {
 
 header .navbar .links {
   display: flex;
+  justify-content: space-around;
 }
 
 header .navbar .links a {
   font-family: "Poppins-Medium";
   color: #f1faee;
-  font-size: 14px;
-  border-radius: 50%;
+  font-size: 16px;
+  border-radius: 100%;
   background-color: #457b9d;
-  padding: 20px;
+  padding: 30px;
   transition: all .5s ease-out;
 }
 
@@ -85,7 +86,7 @@ header .header-text .bottom-text {
   color: #457B9D;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   header .number {
     font-size: 1.1em;
   }
@@ -228,7 +229,7 @@ header .header-text .bottom-text {
 }
 
 .about {
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 .about .about-headline {
@@ -285,20 +286,16 @@ header .header-text .bottom-text {
   font-size: 1.3rem;
 }
 
-.about .about-text .underline {
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .about .about {
-    min-height: 50vh;
+    min-height: 100vh;
   }
   .about .about .about-text .about-header span.light {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .about .about .about-text .about-header span.dark {
-    font-size: 1rem;
-    padding-left: 5em;
+    font-size: 3rem;
+    padding-left: 3em;
   }
   .about .about .about-text .about-body {
     padding: 1em;
@@ -316,14 +313,14 @@ header .header-text .bottom-text {
 
 @media screen and (min-width: 1024px) {
   .about {
-    min-height: 40vh;
+    min-height: 100vh;
   }
   .about .about-text .about-header span.light {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
   }
   .about .about-text .about-header span.dark {
-    font-size: 3.6rem;
-    padding-left: 6em;
+    font-size: 3.8rem;
+    padding-left: 8em;
   }
   .about .about-text .about-body {
     padding: 1em;
@@ -332,7 +329,7 @@ header .header-text .bottom-text {
     color: #1D3557;
     font-family: "Poppins-Regular";
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .about .about-text .about-skills {
     padding-top: 2em;
@@ -341,11 +338,11 @@ header .header-text .bottom-text {
 }
 
 .offer {
-  min-height: 50vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1d3557;
+  background-color: #a8dadc;
   padding-top: 2.5em;
 }
 
@@ -355,12 +352,12 @@ header .header-text .bottom-text {
 }
 
 .offer h4 {
-  color: #F1FAEE;
+  color: #457b9d;
   text-decoration: underline;
 }
 
 .offer p {
-  color: #F1FAEE;
+  color: #1d3557;
   text-transform: capitalize;
 }
 
@@ -439,13 +436,13 @@ header .header-text .bottom-text {
   width: 22em;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio .portfolio-pages a p {
     font-size: 1rem;
     text-align: center;
   }
   .portfolio .portfolio-pages div {
-    min-height: 50vh;
+    min-height: 30vh;
   }
   .portfolio .portfolio-pages div > p {
     width: 100%;
@@ -504,7 +501,7 @@ header .header-text .bottom-text {
   }
   .portfolio .portfolio-pages .card {
     background-color: #f1faee;
-    width: 28em;
+    width: 38em;
   }
 }
 
@@ -581,10 +578,10 @@ footer .social-icons a {
 
 footer .copyright h6 {
   color: #17A2B8;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   footer .footer-header h1 {
     font-size: 3.7rem;
   }
