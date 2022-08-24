@@ -379,11 +379,31 @@ header .header--text .bottom-text {
   background-color: #f1faee;
   width: 25em;
 }
+.portfolio .portfolio-pages .card span {
+  font-size: 1.3rem;
+  color: #457b9d;
+}
 
 @media (min-width: 768px) {
   .portfolio .portfolio-title h3 {
     text-align: center;
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio .portfolio-pages .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .portfolio .portfolio-pages h5 {
+    font-size: 2.5rem;
+  }
+  .portfolio .portfolio-pages div > p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .portfolio .portfolio-pages .card span {
+    font-size: 2.4rem;
   }
 }
 @media (min-width: 1200px) {
