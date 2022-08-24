@@ -263,7 +263,7 @@ header .header--text .bottom-text {
 }
 
 .about {
-  min-height: 50vh;
+  min-height: 100%;
   background-color: #1d3557;
 }
 .about .about-text {
