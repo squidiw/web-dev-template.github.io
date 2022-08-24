@@ -420,6 +420,7 @@ header .header--text .bottom-text {
   }
   .portfolio .portfolio-pages h5 {
     font-size: 2.5rem;
+    text-align: center;
   }
   .portfolio .portfolio-pages div > p {
     font-size: 1.6rem;
