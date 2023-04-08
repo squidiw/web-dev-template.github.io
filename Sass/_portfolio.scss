@@ -3,7 +3,7 @@
   min-height:50vh;
   display: flex;
 
-  h6{
+  .h6{
     text-decoration: underline;
   }
  
@@ -18,7 +18,7 @@
 
     
 
-    h3{
+    .h3{
       text-transform: none;
       padding: 1em;
       font-size: 1.5rem;
@@ -27,11 +27,11 @@
 
   .portfolio-pages{
 
-    h2{
+    .h2{
       font-family: 'Sacramento';
     }
 
-    & h5{
+    & .h5{
       color:#2b5ea7;
       text-decoration: underline;
 
@@ -80,11 +80,8 @@
 @media (min-width:768px) {
   
   .portfolio{
-
     .portfolio-title{
-    
-
-      h3{
+      .h3{
        text-align: center;
         font-size: 1.2rem;
       }
@@ -98,7 +95,7 @@
     margin: 0 auto;
   }
 
-  .portfolio .portfolio-pages h5{
+  .portfolio .portfolio-pages .h5{
     font-size: 2.5rem;
     text-align: center;
   }
@@ -108,7 +105,7 @@
     text-align: center;
   }
 
-  .portfolio .portfolio-pages .card span{
+  .portfolio .portfolio-pages .card span.skills{
     font-size:2.4rem;
   }
 }
@@ -119,7 +116,7 @@
     .portfolio-title{
 
   
-      h3{
+      .h3{
         text-transform: capitalize;
         padding: 0.2em;
         font-size: 1.5rem;
@@ -128,11 +125,11 @@
   
     .portfolio-pages{
   
-      h2{
+      .h2{
         font-family: 'Sacramento';
       }
   
-      & h5{
+      & .h5{
         color:#2b5ea7;
         text-decoration: underline;
   

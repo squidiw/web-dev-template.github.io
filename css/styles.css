@@ -270,13 +270,13 @@ header .header--text .bottom-text {
   padding: 1em 0.5em 0.5em 0.5em;
   background-color: #f1faee;
 }
-.about .about-text .about-header h2 {
+.about .about-text .about-header .h2 {
   text-align: center;
   font-family: "Alice", serif;
   text-transform: uppercase;
   color: #a8dadc;
 }
-.about .about-text .about-header h4 {
+.about .about-text .about-header .h4 {
   color: #457b9d;
   text-align: center;
   font-family: "Sacramento", cursive;
@@ -294,10 +294,10 @@ header .header--text .bottom-text {
 }
 
 @media (min-width: 992px) {
-  .about .about-text .about-header h2 {
+  .about .about-text .about-header .h2 {
     font-size: 2.9rem;
   }
-  .about .about-text .about-header h4 {
+  .about .about-text .about-header .h4 {
     font-size: 2.5rem;
   }
   .about .about-text .about-body p {
@@ -313,10 +313,10 @@ header .header--text .bottom-text {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .about .about-text .about-header h2 {
+  .about .about-text .about-header .h2 {
     font-size: 3.4rem;
   }
-  .about .about-text .about-header h4 {
+  .about .about-text .about-header .h4 {
     font-size: 2.8rem;
   }
   .about .about-text .about-body p {
@@ -337,24 +337,24 @@ header .header--text .bottom-text {
   background-color: #a8dadc;
   padding-top: 2.5em;
 }
-.offer h2 {
+.offer .h2 {
   color: #F1FAEE;
   font-size: 1.7rem;
 }
-.offer h4 {
+.offer .h4 {
   color: #457b9d;
   text-decoration: underline;
 }
 .offer p {
   color: #1d3557;
-  text-transform: capitalize;
+  font-size: 1.2rem;
 }
 
 .portfolio {
   min-height: 50vh;
   display: flex;
 }
-.portfolio h6 {
+.portfolio .h6 {
   text-decoration: underline;
 }
 .portfolio .portfolio-title {
@@ -365,15 +365,15 @@ header .header--text .bottom-text {
   align-items: center;
   margin: 0 !important;
 }
-.portfolio .portfolio-title h3 {
+.portfolio .portfolio-title .h3 {
   text-transform: none;
   padding: 1em;
   font-size: 1.5rem;
 }
-.portfolio .portfolio-pages h2 {
+.portfolio .portfolio-pages .h2 {
   font-family: "Sacramento";
 }
-.portfolio .portfolio-pages h5 {
+.portfolio .portfolio-pages .h5 {
   color: #2b5ea7;
   text-decoration: underline;
 }
@@ -408,7 +408,7 @@ header .header--text .bottom-text {
 }
 
 @media (min-width: 768px) {
-  .portfolio .portfolio-title h3 {
+  .portfolio .portfolio-title .h3 {
     text-align: center;
     font-size: 1.2rem;
   }
@@ -418,7 +418,7 @@ header .header--text .bottom-text {
     width: 80%;
     margin: 0 auto;
   }
-  .portfolio .portfolio-pages h5 {
+  .portfolio .portfolio-pages .h5 {
     font-size: 2.5rem;
     text-align: center;
   }
@@ -426,20 +426,20 @@ header .header--text .bottom-text {
     font-size: 1.6rem;
     text-align: center;
   }
-  .portfolio .portfolio-pages .card span {
+  .portfolio .portfolio-pages .card span.skills {
     font-size: 2.4rem;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio .portfolio-title h3 {
+  .portfolio .portfolio-title .h3 {
     text-transform: capitalize;
     padding: 0.2em;
     font-size: 1.5rem;
   }
-  .portfolio .portfolio-pages h2 {
+  .portfolio .portfolio-pages .h2 {
     font-family: "Sacramento";
   }
-  .portfolio .portfolio-pages h5 {
+  .portfolio .portfolio-pages .h5 {
     color: #2b5ea7;
     text-decoration: underline;
   }
@@ -502,14 +502,13 @@ footer .fab, footer .fa {
     font-size: 1.4em;
   }
 }
-h2, h3 {
+h2, h3, h4, .h2, .h3, .h4 {
   font-family: "Alice", serif;
   text-transform: capitalize;
 }
 
-h4 {
-  font-family: "Alice", serif;
-  text-transform: capitalize;
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
 }
 
 p {
