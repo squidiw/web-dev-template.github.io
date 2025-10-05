@@ -256,6 +256,36 @@
 				border-radius: 0.5rem;
 			}
 
+			/* Fancy Underline for conversion-focused text */
+			.highlight-underline {
+				position: relative;
+				display: inline-block;
+				z-index: 1;
+			}
+
+			.highlight-underline::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: -2px;
+				width: 100%;
+				height: 8px;
+				background: linear-gradient(
+					120deg,
+					var(--warm-gold) 0%,
+					var(--warm-peach) 100%
+				);
+				opacity: 0.3;
+				z-index: -1;
+				border-radius: 3px;
+			}
+
+			.highlight-underline:hover::after {
+				opacity: 0.5;
+				height: 10px;
+				transition: all 0.3s ease;
+			}
+
 			@media (max-width: 768px) {
 				.hero-title {
 					font-size: 2rem;
@@ -306,6 +336,11 @@
 							href="#why"
 							class="text-white hover:text-yellow-300 transition"
 							>Why Me</a
+						>
+						<a
+							href="#pricing"
+							class="text-white hover:text-yellow-300 transition"
+							>Pricing</a
 						>
 						<a
 							href="#faq"
@@ -368,6 +403,11 @@
 					>Why Me</a
 				>
 				<a
+					href="#pricing"
+					class="block text-white hover:text-yellow-300 py-2"
+					>Pricing</a
+				>
+				<a
 					href="#faq"
 					class="block text-white hover:text-yellow-300 py-2"
 					>FAQ</a
@@ -393,14 +433,14 @@
 								class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
 							>
 								Helping Atlanta & East Coast Entrepreneurs Build Shopify
-								Stores That Sell
+								<span class="highlight-underline">Stores That Sell</span>
 							</h1>
 							<p
 								class="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed"
 							>
 								Bring your business online with a custom Shopify store
 								built for growth — from a developer with 4+ years of
-								agency experience and a focus on real results.
+								agency experience and a focus on <span class="highlight-underline">real results</span>.
 							</p>
 							<div class="flex flex-col sm:flex-row gap-4 mb-8">
 								<a
@@ -475,7 +515,7 @@
 										>The holidays are right around the corner.</strong
 									>
 									Let's make sure your Shopify store is ready to
-									capture traffic and turn browsers into buyers.
+									capture traffic and <span class="highlight-underline">turn browsers into buyers</span>.
 								</p>
 							</div>
 							<div class="mt-8">
@@ -542,7 +582,7 @@
 					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 						<!-- Service 1 -->
 						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-							<div class="text-5xl mb-4">=�</div>
+						<div class="text-5xl mb-4">🚀</div>
 							<h3
 								class="text-2xl font-bold mb-3"
 								style="color: var(--primary-navy)"
@@ -558,7 +598,7 @@
 
 						<!-- Service 2 -->
 						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-							<div class="text-5xl mb-4"><�</div>
+						<div class="text-5xl mb-4">🎨</div>
 							<h3
 								class="text-2xl font-bold mb-3"
 								style="color: var(--primary-navy)"
@@ -574,7 +614,7 @@
 
 						<!-- Service 3 -->
 						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-							<div class="text-5xl mb-4">�</div>
+						<div class="text-5xl mb-4">⚡</div>
 							<h3
 								class="text-2xl font-bold mb-3"
 								style="color: var(--primary-navy)"
@@ -589,7 +629,7 @@
 
 						<!-- Service 4 -->
 						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-							<div class="text-5xl mb-4">=�</div>
+						<div class="text-5xl mb-4">📱</div>
 							<h3
 								class="text-2xl font-bold mb-3"
 								style="color: var(--primary-navy)"
@@ -604,7 +644,7 @@
 
 						<!-- Service 5 -->
 						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-							<div class="text-5xl mb-4">=</div>
+						<div class="text-5xl mb-4">🔄</div>
 							<h3
 								class="text-2xl font-bold mb-3"
 								style="color: var(--primary-navy)"
@@ -619,7 +659,7 @@
 
 						<!-- Service 6 -->
 						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-							<div class="text-5xl mb-4">='</div>
+						<div class="text-5xl mb-4">🔧</div>
 							<h3
 								class="text-2xl font-bold mb-3"
 								style="color: var(--primary-navy)"
@@ -862,6 +902,81 @@
 				</div>
 			</section>
 
+			<!-- Pricing Section -->
+			<section id="pricing" class="py-20 bg-white">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
+							What Most Clients Invest
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+							<span class="highlight-underline">Transparent pricing</span> for real businesses. No hidden fees, no surprises.
+						</p>
+					</div>
+
+					<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+
+						<!-- Tier 1 -->
+						<div class="bg-gray-50 rounded-lg p-8 shadow-md card-hover border-2 border-gray-200">
+							<div class="text-center mb-6">
+								<div class="text-4xl font-bold mb-2" style="color: var(--primary-blue);">
+									$800–$1,200
+								</div>
+								<h3 class="text-xl font-bold" style="color: var(--primary-navy);">Quick Fixes & Polish</h3>
+							</div>
+							<p class="text-gray-700 leading-relaxed text-center">
+								Speed optimization, bug fixes, mobile improvements, or small feature additions to an existing store.
+							</p>
+						</div>
+
+						<!-- Tier 2 -->
+						<div class="bg-white rounded-lg p-8 shadow-xl card-hover border-2 border-yellow-400 relative">
+							<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+								<span class="bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
+									<span style="background: #fbbf24; color: #1d3557; padding: 2px 8px; border-radius: 4px;">Most Popular</span>
+								</span>
+							</div>
+							<div class="text-center mb-6 mt-4">
+								<div class="text-4xl font-bold mb-2" style="color: var(--warm-gold);">
+									$1,500–$2,500
+								</div>
+								<h3 class="text-xl font-bold" style="color: var(--primary-navy);">Store Launch or Redesign</h3>
+							</div>
+							<p class="text-gray-700 leading-relaxed text-center">
+								Custom theme setup, full redesign, platform migration, or complete store build with branding and product pages.
+							</p>
+						</div>
+
+						<!-- Tier 3 -->
+						<div class="bg-gray-50 rounded-lg p-8 shadow-md card-hover border-2 border-gray-200">
+							<div class="text-center mb-6">
+								<div class="text-4xl font-bold mb-2" style="color: var(--primary-blue);">
+									$2,500+
+								</div>
+								<h3 class="text-xl font-bold" style="color: var(--primary-navy);">Custom Development</h3>
+							</div>
+							<p class="text-gray-700 leading-relaxed text-center">
+								Advanced features, app integrations, custom checkout flows, subscription models, or multi-store setups.
+							</p>
+						</div>
+
+					</div>
+
+					<div class="text-center max-w-3xl mx-auto">
+						<p class="text-lg text-gray-700 leading-relaxed mb-6">
+							Every project is scoped individually based on your needs, timeline, and goals. These ranges give you a starting point, but I'll provide a clear, detailed quote after our free consultation.
+						</p>
+						<p class="text-base text-gray-600 mb-8">
+							<strong>Not sure where your project fits?</strong> Let's talk — I'll walk you through what makes sense for your business and budget.
+						</p>
+						<a href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
+						   class="btn-primary inline-block px-10 py-4 rounded-lg font-bold text-xl shadow-lg">
+							Book a Free Consultation
+						</a>
+					</div>
+				</div>
+			</section>
+
 			<!-- CTA Section -->
 			<section
 				id="cta"
@@ -873,7 +988,7 @@
 					</h2>
 					<p class="text-xl md:text-2xl mb-10 leading-relaxed">
 						Don't let another month go by without a professional,
-						sales-ready online store. Let's talk about your vision and
+						<span class="highlight-underline">sales-ready online store</span>. Let's talk about your vision and
 						make it real.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1001,7 +1116,7 @@
 					<div class="bg-white rounded-lg shadow-xl p-8 md:p-12">
 						<form
 							id="contact-form"
-							action="#"
+							action="https://api.web3forms.com/submit"
 							method="POST"
 							novalidate
 						>
