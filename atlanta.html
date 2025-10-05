@@ -1120,6 +1120,12 @@
 							method="POST"
 							novalidate
 						>
+							<!-- Web3Forms Access Key -->
+							<input type="hidden" name="access_key" value="f3fdc2a3-b4fe-4ba7-9d8e-cbc332ba6651">
+							<input type="hidden" name="redirect" value="https://korantenganane.dev/atlanta#contact">
+							<input type="hidden" name="subject" value="New Lead from Atlanta Landing Page">
+							<input type="hidden" name="from_name" value="Atlanta Landing Page">
+
 							<!-- Success Message (hidden by default) -->
 							<div
 								id="success-message"
@@ -1368,7 +1374,7 @@
 					return;
 				}
 
-				// Submit form via Formspree
+				// Submit form via Web3Forms
 				try {
 					const formData = new FormData(form);
 					const response = await fetch(form.action, {
