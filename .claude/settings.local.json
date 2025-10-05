@@ -5,7 +5,8 @@
       "Bash(mv:*)",
       "Bash(grep:*)",
       "Bash(cat:*)",
-      "Bash(/Users/squidiw/Desktop/web-dev-template.github.io/atlanta.html)"
+      "Bash(/Users/squidiw/Desktop/web-dev-template.github.io/atlanta.html)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
