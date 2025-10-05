@@ -23,11 +23,7 @@
     <meta name="twitter:image" content="https://korantenganane.dev/Imgs/atlanta-og.png">
 
     <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
-
-    <!-- Fonts - using your existing font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Sacramento&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -57,6 +53,28 @@
     </script>
 
     <style>
+        /* Local Font Declarations */
+        @font-face {
+            font-family: 'Work Sans';
+            src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+            font-weight: 100 900;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'JetBrains Mono';
+            src: url('fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+            font-weight: 100 900;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Sacramento';
+            src: url('fonts/Sacramento-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-display: swap;
+        }
+
         :root {
             --primary-navy: #1d3557;
             --primary-blue: #457b9d;
@@ -68,12 +86,12 @@
         }
 
         body {
-            font-family: 'Sacramento', cursive;
+            font-family: 'JetBrains Mono', monospace;
             color: var(--dark-text);
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Sacramento', cursive;
+            font-family: 'Work Sans', sans-serif;
         }
 
         .font-display {
@@ -237,10 +255,10 @@
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                            Helping Atlanta Entrepreneurs Build Shopify Stores That Sell
+                            Helping Atlanta & East Coast Entrepreneurs Build Shopify Stores That Sell
                         </h1>
                         <p class="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
-                            Bring your business online with a custom Shopify store built for growth  from an experienced developer who understands small business.
+                            Bring your business online with a custom Shopify store built for growth — from a developer with 4+ years of agency experience and a focus on real results.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 mb-8">
                             <a href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
@@ -253,7 +271,7 @@
                             </a>
                         </div>
                         <p class="text-sm text-gray-300 italic">
-                             Trusted by Atlanta small businesses &nbsp;|&nbsp;  4+ years Shopify experience &nbsp;|&nbsp;  Fast holiday timelines
+                             Trusted by small business owners nationwide &nbsp;|&nbsp;  4+ years Shopify experience &nbsp;|&nbsp;  Fast holiday delivery timelines
                         </p>
                     </div>
                     <div class="hidden md:block">
@@ -272,19 +290,20 @@
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: var(--primary-navy);">
-                            An Atlanta Developer Who Gets It
+                            Your Partner in E-Commerce Success
                         </h2>
                         <div class="space-y-4 text-lg leading-relaxed text-gray-700">
                             <p>
-                                I'm <strong>Koranteng Anane</strong>, and I've spent the past 4+ years building Shopify stores for agencies and clients across the country.
-                                Now I'm bringing that same agency-level quality directly to Atlanta entrepreneurs and Black business owners.
+                                I'm <strong>Koranteng Anane</strong>, a Shopify developer with over four years of hands-on experience building and optimizing online stores for agencies and brands across the country.
                             </p>
                             <p>
-                                I know what it's like to hustle, to build something from the ground up, and to need a tech partner who actually listens and delivers.
-                                Whether you're launching your first store or ready to scale, I'm here to help you get online and start selling.
+                                Now I'm bringing that same agency-level quality directly to Atlanta, New York, and other East Coast entrepreneurs who want to grow online without the big-agency price tag.
                             </p>
                             <p>
-                                <strong>The holidays are coming fast.</strong> Let's get your store ready to capture that seasonal traffic and turn browsers into buyers.
+                                I know what it's like to hustle — to build something from the ground up and need a tech partner who actually listens, delivers, and cares about your success.
+                            </p>
+                            <p>
+                                <strong>The holidays are right around the corner.</strong> Let's make sure your Shopify store is ready to capture traffic and turn browsers into buyers.
                             </p>
                         </div>
                         <div class="mt-8">
@@ -310,7 +329,7 @@
                         What I Can Do for Your Business
                     </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        From zero to launch, or from struggling to thriving  I've got the skills to take your store where it needs to go.
+                        From startup to scale-up — I help small brands look and perform like big ones.
                     </p>
                 </div>
 
@@ -321,7 +340,7 @@
                         <div class="text-5xl mb-4">=�</div>
                         <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Complete Store Setup</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            From domain to checkout, I'll build your Shopify store from scratch  product pages, collections, navigation, payment setup, and more.
+                            From domain to checkout, I'll build your Shopify store from scratch  product pages, collections, navigation, payments, and more.
                         </p>
                     </div>
 
@@ -330,7 +349,7 @@
                         <div class="text-5xl mb-4"><�</div>
                         <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Theme Redesigns</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Already have a store but it's not converting? I'll redesign it to look modern, professional, and ready to sell.
+                            Already selling but not converting? I'll redesign your store for a modern, professional, and high-performing experience.
                         </p>
                     </div>
 
@@ -339,7 +358,7 @@
                         <div class="text-5xl mb-4">�</div>
                         <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Speed Optimization</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Slow stores lose sales. I'll optimize your site speed, images, and code to keep customers from bouncing.
+                            Slow stores lose sales. I'll clean up your code and images to improve load times and conversion rates.
                         </p>
                     </div>
 
@@ -348,7 +367,7 @@
                         <div class="text-5xl mb-4">=�</div>
                         <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Mobile Polish</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Most shoppers are on mobile. I'll make sure your store looks flawless and functions perfectly on every device.
+                            70% of traffic comes from phones. I'll make sure your site looks and performs perfectly on mobile.
                         </p>
                     </div>
 
@@ -357,7 +376,7 @@
                         <div class="text-5xl mb-4">=</div>
                         <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Platform Migration</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Moving from Wix, Squarespace, or another platform? I'll migrate your products, content, and design to Shopify seamlessly.
+                            Moving from Wix or Squarespace? I'll migrate your products and design seamlessly to Shopify.
                         </p>
                     </div>
 
@@ -366,7 +385,7 @@
                         <div class="text-5xl mb-4">='</div>
                         <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Apps & Integrations</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Need subscriptions, upsells, email marketing, or custom features? I'll integrate the right apps and make them work together.
+                            Subscriptions, upsells, or Klaviyo email flows — I'll integrate the right tools to grow your sales.
                         </p>
                     </div>
 
@@ -379,10 +398,10 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        Real Results from Real Projects
+                        Results That Speak for Themselves
                     </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        I've built stores for brands you'd recognize (can't name them, but they're legit). Here's what I delivered:
+                        Here's a snapshot of what I've delivered on recent Shopify projects:
                     </p>
                 </div>
 
@@ -404,11 +423,11 @@
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start">
                                 <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Improved mobile performance scores from 40s to 80s+</span>
+                                <span>Improved mobile performance scores from 40s to 90+</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Reduced page load times by 50%+ through code optimization</span>
+                                <span>Reduced page load times by 50% through smart code optimization</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-green-600 mr-2 text-xl"></span>
@@ -418,19 +437,19 @@
                     </div>
 
                     <div class="bg-gray-50 rounded-lg p-8">
-                        <h3 class="text-2xl font-bold mb-4" style="color: var(--primary-navy);">Technical Capabilities</h3>
+                        <h3 class="text-2xl font-bold mb-4" style="color: var(--primary-navy);">Technical Highlights</h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start">
                                 <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Automated bulk product imports saving 100+ hours of manual work</span>
+                                <span>Automated bulk product imports, saving 100+ hours of manual work</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Integrated subscription apps with custom checkout flows</span>
+                                <span>Integrated subscription and upsell apps with custom checkout flows</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Built responsive themes that look perfect on all devices</span>
+                                <span>Built fully responsive themes optimized for every device</span>
                             </li>
                         </ul>
                     </div>
@@ -443,10 +462,10 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        Why Choose Me Over an Agency?
+                        Why Work With Me Instead of an Agency
                     </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        You get agency-quality work without the agency headaches.
+                        Agency-level quality. Solo-level attention.
                     </p>
                 </div>
 
@@ -459,9 +478,9 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Solo Responsiveness</h3>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Direct Communication</h3>
                             <p class="text-gray-700 leading-relaxed">
-                                You work directly with me  no account managers, no middlemen. I answer calls, respond to messages, and keep you in the loop.
+                                You'll work with me one-on-one. No account managers or delays.
                             </p>
                         </div>
                     </div>
@@ -475,7 +494,7 @@
                         <div>
                             <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Agency-Level Quality</h3>
                             <p class="text-gray-700 leading-relaxed">
-                                I've built stores for major brands at top agencies. You get that same expertise without the inflated price tag.
+                                I've built stores for major brands through top U.S. agencies — the same quality, less red tape.
                             </p>
                         </div>
                     </div>
@@ -487,9 +506,9 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Local Understanding</h3>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Local Insight, Broader Reach</h3>
                             <p class="text-gray-700 leading-relaxed">
-                                I focus on Atlanta businesses because I understand the hustle, the community, and what it takes to succeed here.
+                                I understand the hustle of Atlanta and East Coast entrepreneurs — fast timelines, real goals.
                             </p>
                         </div>
                     </div>
@@ -501,7 +520,7 @@
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Fast Holiday Timelines</h3>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Quick Turnarounds</h3>
                             <p class="text-gray-700 leading-relaxed">
                                 Need your store ready for the holidays? I work fast without cutting corners  typical projects wrap in 24 weeks.
                             </p>
@@ -519,7 +538,7 @@
                     Ready to Build Something Great?
                 </h2>
                 <p class="text-xl md:text-2xl mb-10 leading-relaxed">
-                    Don't let another month go by without a professional online store. Let's talk about your vision and get you launched.
+                    Don't let another month go by without a professional, sales-ready online store. Let's talk about your vision and make it real.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
@@ -542,7 +561,7 @@
                         Common Questions
                     </h2>
                     <p class="text-xl text-gray-600">
-                        Here's what most Atlanta business owners ask me.
+                        Here's what most business owners ask before we start.
                     </p>
                 </div>
 
@@ -554,7 +573,7 @@
                         </h3>
                         <p class="text-gray-700 leading-relaxed">
                             Most projects take 24 weeks from start to launch, depending on complexity and how quickly you can provide content (product images, descriptions, etc.).
-                            If you need it faster for the holidays, let me know and I'll see what I can do.
+                            
                         </p>
                     </div>
 
@@ -563,17 +582,17 @@
                             Can you help if I already have a Shopify store?
                         </h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Absolutely. I can redesign your existing store, optimize its speed, fix bugs, add new features, or integrate apps.
-                            You don't need to start from scratch  we can work with what you've got.
+                            Definitely. I handle redesigns, speed fixes, and optimizations.
+                            
                         </p>
                     </div>
 
                     <div class="bg-gray-50 rounded-lg p-6 shadow-md">
                         <h3 class="text-xl font-bold mb-3" style="color: var(--primary-navy);">
-                            Do I have to be in Atlanta to work with you?
+                            Do I have to be in Atlanta or New York to work with you?
                         </h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Nope! I work remotely, so I can help anyone. That said, I focus on Atlanta entrepreneurs because I'm passionate about supporting our local community.
+                            Not at all — I work remotely with clients across the U.S., but I specialize in supporting Atlanta and East Coast entrepreneurs.
                         </p>
                     </div>
 
@@ -582,9 +601,9 @@
                             How do I get started?
                         </h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Easy. Fill out the contact form below, book a free consultation call, or shoot me an email at
-                            <a href="mailto:hello@korantenganane.dev" class="font-bold hover:underline" style="color: var(--primary-blue);">hello@korantenganane.dev</a>.
-                            We'll chat about your business, your goals, and what you need  no pressure, no sales pitch.
+                            Just fill out the form below or book a free call — I'll personally follow up within 24 hours.
+                            
+                            
                         </p>
                     </div>
 
@@ -600,7 +619,7 @@
                         Let's Talk About Your Store
                     </h2>
                     <p class="text-xl text-gray-600">
-                        Fill out the form below and I'll get back to you within 24 hours.
+                        Fill out the form below — I'll get back to you within one business day.
                     </p>
                     <p class="text-lg text-gray-600 mt-2">
                         Or email me directly at

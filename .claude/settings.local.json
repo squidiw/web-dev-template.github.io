@@ -3,7 +3,9 @@
     "allow": [
       "Bash(sips:*)",
       "Bash(mv:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(/Users/squidiw/Desktop/web-dev-template.github.io/atlanta.html)"
     ],
     "deny": [],
     "ask": []
