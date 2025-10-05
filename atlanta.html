@@ -1,857 +1,1303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Helping Atlanta entrepreneurs build Shopify stores that sell. Custom e-commerce development from an experienced Shopify developer who understands small business. Get your store ready for the holidays.">
-    <meta name="author" content="Koranteng Anane">
-    <title>Atlanta Shopify Developer | Koranteng Anane | Custom E-commerce Stores</title>
-    <link rel="canonical" href="https://korantenganane.dev/atlanta">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Atlanta Shopify Developer | Koranteng Anane">
-    <meta property="og:description" content="Helping Atlanta entrepreneurs build Shopify stores that sell. Custom e-commerce development from an experienced developer who understands small business.">
-    <meta property="og:url" content="https://korantenganane.dev/atlanta">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://korantenganane.dev/Imgs/atlanta-og.png">
-    <meta property="og:site_name" content="Koranteng Anane - Shopify Developer">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Atlanta Shopify Developer | Koranteng Anane">
-    <meta name="twitter:description" content="Helping Atlanta entrepreneurs build Shopify stores that sell. Custom e-commerce development for Atlanta businesses.">
-    <meta name="twitter:image" content="https://korantenganane.dev/Imgs/atlanta-og.png">
-
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Koranteng Anane  Shopify Developer",
-        "image": "https://korantenganane.dev/Imgs/atlanta-og.png",
-        "description": "Shopify development services for Atlanta entrepreneurs and small businesses",
-        "areaServed": {
-            "@type": "City",
-            "name": "Atlanta",
-            "address": {
-                "@type": "PostalAddress",
-                "addressRegion": "GA",
-                "addressCountry": "US"
-            }
-        },
-        "url": "https://korantenganane.dev/atlanta",
-        "telephone": "+1-859-397-0975",
-        "email": "hello@korantenganane.dev",
-        "priceRange": "$$"
-    }
-    </script>
-
-    <style>
-        /* Local Font Declarations */
-        @font-face {
-            font-family: 'Work Sans';
-            src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
-            font-weight: 100 900;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: 'JetBrains Mono';
-            src: url('fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
-            font-weight: 100 900;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: 'Sacramento';
-            src: url('fonts/Sacramento-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-display: swap;
-        }
-
-        :root {
-            --primary-navy: #1d3557;
-            --primary-blue: #457b9d;
-            --accent-teal: #17a2b8;
-            --warm-gold: #f4a261;
-            --warm-peach: #e76f51;
-            --light-bg: #f8f9fa;
-            --dark-text: #212529;
-        }
-
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--dark-text);
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Work Sans', sans-serif;
-        }
-
-        .font-display {
-            font-family: 'Sacramento', cursive;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .nav-sticky {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            background: rgba(29, 53, 87, 0.95);
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-primary {
-            background: var(--warm-gold);
-            color: var(--primary-navy);
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background: var(--warm-peach);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .btn-secondary {
-            background: var(--primary-blue);
-            color: white;
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background: var(--primary-navy);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-blue) 100%);
-        }
-
-        .hero-pattern {
-            background-color: #1d3557;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23457b9d' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-
-        .placeholder-img {
-            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 1rem;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: var(--warm-gold);
-            ring: 2px;
-            ring-color: var(--warm-gold);
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--warm-gold);
-            color: var(--primary-navy);
-            padding: 8px;
-            text-decoration: none;
-            z-index: 100;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* Form validation styles */
-        .error-message {
-            color: #dc3545;
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-
-        .success-message {
-            color: #28a745;
-            font-size: 1rem;
-            padding: 1rem;
-            background: #d4edda;
-            border-radius: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body class="antialiased">
-
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Sticky Navigation -->
-    <nav class="nav-sticky" role="navigation" aria-label="Main navigation">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <span class="text-white text-xl font-bold">
-                        <span class="font-display text-3xl text-yellow-300">Koranteng</span>
-                    </span>
-                </div>
-                <div class="hidden md:flex space-x-6 text-sm">
-                    <a href="#about" class="text-white hover:text-yellow-300 transition">About</a>
-                    <a href="#services" class="text-white hover:text-yellow-300 transition">Services</a>
-                    <a href="#work" class="text-white hover:text-yellow-300 transition">Work</a>
-                    <a href="#why" class="text-white hover:text-yellow-300 transition">Why Me</a>
-                    <a href="#faq" class="text-white hover:text-yellow-300 transition">FAQ</a>
-                    <a href="#contact" class="text-white hover:text-yellow-300 transition">Contact</a>
-                </div>
-                <div class="flex md:hidden">
-                    <button id="mobile-menu-btn" class="text-white" aria-label="Toggle mobile menu" aria-expanded="false">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 px-4 pt-2 pb-4 space-y-2">
-            <a href="#about" class="block text-white hover:text-yellow-300 py-2">About</a>
-            <a href="#services" class="block text-white hover:text-yellow-300 py-2">Services</a>
-            <a href="#work" class="block text-white hover:text-yellow-300 py-2">Work</a>
-            <a href="#why" class="block text-white hover:text-yellow-300 py-2">Why Me</a>
-            <a href="#faq" class="block text-white hover:text-yellow-300 py-2">FAQ</a>
-            <a href="#contact" class="block text-white hover:text-yellow-300 py-2">Contact</a>
-        </div>
-    </nav>
-
-    <main id="main-content">
-
-        <!-- Hero Section -->
-        <section id="hero" class="hero-pattern text-white py-20 md:py-32">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                            Helping Atlanta & East Coast Entrepreneurs Build Shopify Stores That Sell
-                        </h1>
-                        <p class="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
-                            Bring your business online with a custom Shopify store built for growth — from a developer with 4+ years of agency experience and a focus on real results.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                            <a href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
-                               class="btn-primary inline-block px-8 py-4 rounded-lg font-bold text-lg text-center shadow-lg">
-                                Book a Free Consultation
-                            </a>
-                            <a href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
-                               class="btn-secondary inline-block px-8 py-4 rounded-lg font-bold text-lg text-center shadow-lg">
-                                Send a Quick Message
-                            </a>
-                        </div>
-                        <p class="text-sm text-gray-300 italic">
-                             Trusted by small business owners nationwide &nbsp;|&nbsp;  4+ years Shopify experience &nbsp;|&nbsp;  Fast holiday delivery timelines
-                        </p>
-                    </div>
-                    <div class="hidden md:block">
-                        <div class="placeholder-img rounded-lg h-96 shadow-2xl" style="min-height: 400px;">
-                            <!-- HERO_IMAGE_URL placeholder -->
-                            <span class="text-gray-400">Hero Image</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: var(--primary-navy);">
-                            Your Partner in E-Commerce Success
-                        </h2>
-                        <div class="space-y-4 text-lg leading-relaxed text-gray-700">
-                            <p>
-                                I'm <strong>Koranteng Anane</strong>, a Shopify developer with over four years of hands-on experience building and optimizing online stores for agencies and brands across the country.
-                            </p>
-                            <p>
-                                Now I'm bringing that same agency-level quality directly to Atlanta, New York, and other East Coast entrepreneurs who want to grow online without the big-agency price tag.
-                            </p>
-                            <p>
-                                I know what it's like to hustle — to build something from the ground up and need a tech partner who actually listens, delivers, and cares about your success.
-                            </p>
-                            <p>
-                                <strong>The holidays are right around the corner.</strong> Let's make sure your Shopify store is ready to capture traffic and turn browsers into buyers.
-                            </p>
-                        </div>
-                        <div class="mt-8">
-                            <p class="text-sm font-semibold" style="color: var(--primary-blue);">=� Based remotely, focused on Atlanta</p>
-                            <p class="text-sm font-semibold" style="color: var(--primary-blue);">=� <a href="tel:+18593970975" class="hover:underline">859-397-0975</a></p>
-                            <p class="text-sm font-semibold" style="color: var(--primary-blue);">	 <a href="mailto:hello@korantenganane.dev" class="hover:underline">hello@korantenganane.dev</a></p>
-                        </div>
-                    </div>
-                    <div class="order-first md:order-last">
-                        <div class="placeholder-img rounded-lg h-96 shadow-xl">
-                            <span class="text-gray-400">About Image</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-20" style="background-color: var(--light-bg);">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        What I Can Do for Your Business
-                    </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        From startup to scale-up — I help small brands look and perform like big ones.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Service 1 -->
-                    <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-                        <div class="text-5xl mb-4">=�</div>
-                        <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Complete Store Setup</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            From domain to checkout, I'll build your Shopify store from scratch  product pages, collections, navigation, payments, and more.
-                        </p>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-                        <div class="text-5xl mb-4"><�</div>
-                        <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Theme Redesigns</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Already selling but not converting? I'll redesign your store for a modern, professional, and high-performing experience.
-                        </p>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-                        <div class="text-5xl mb-4">�</div>
-                        <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Speed Optimization</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Slow stores lose sales. I'll clean up your code and images to improve load times and conversion rates.
-                        </p>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-                        <div class="text-5xl mb-4">=�</div>
-                        <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Mobile Polish</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            70% of traffic comes from phones. I'll make sure your site looks and performs perfectly on mobile.
-                        </p>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-                        <div class="text-5xl mb-4">=</div>
-                        <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Platform Migration</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Moving from Wix or Squarespace? I'll migrate your products and design seamlessly to Shopify.
-                        </p>
-                    </div>
-
-                    <!-- Service 6 -->
-                    <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
-                        <div class="text-5xl mb-4">='</div>
-                        <h3 class="text-2xl font-bold mb-3" style="color: var(--primary-navy);">Apps & Integrations</h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Subscriptions, upsells, or Klaviyo email flows — I'll integrate the right tools to grow your sales.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Work/Proof Section -->
-        <section id="work" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        Results That Speak for Themselves
-                    </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Here's a snapshot of what I've delivered on recent Shopify projects:
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <div class="placeholder-img rounded-lg h-64 shadow-lg">
-                        <span class="text-gray-400">WORK_IMAGE_1</span>
-                    </div>
-                    <div class="placeholder-img rounded-lg h-64 shadow-lg">
-                        <span class="text-gray-400">WORK_IMAGE_2</span>
-                    </div>
-                    <div class="placeholder-img rounded-lg h-64 shadow-lg">
-                        <span class="text-gray-400">WORK_IMAGE_3</span>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 rounded-lg p-8">
-                        <h3 class="text-2xl font-bold mb-4" style="color: var(--primary-navy);">Performance Wins</h3>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Improved mobile performance scores from 40s to 90+</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Reduced page load times by 50% through smart code optimization</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Built custom product galleries with advanced variant logic</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-gray-50 rounded-lg p-8">
-                        <h3 class="text-2xl font-bold mb-4" style="color: var(--primary-navy);">Technical Highlights</h3>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start">
-                                <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Automated bulk product imports, saving 100+ hours of manual work</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Integrated subscription and upsell apps with custom checkout flows</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-green-600 mr-2 text-xl"></span>
-                                <span>Built fully responsive themes optimized for every device</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Work With Me Section -->
-        <section id="why" class="py-20" style="background-color: var(--light-bg);">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        Why Work With Me Instead of an Agency
-                    </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Agency-level quality. Solo-level attention.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mr-4">
-                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold" style="background-color: var(--warm-gold); color: var(--primary-navy);">
-                                1
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Direct Communication</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                You'll work with me one-on-one. No account managers or delays.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mr-4">
-                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold" style="background-color: var(--warm-gold); color: var(--primary-navy);">
-                                2
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Agency-Level Quality</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                I've built stores for major brands through top U.S. agencies — the same quality, less red tape.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mr-4">
-                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold" style="background-color: var(--warm-gold); color: var(--primary-navy);">
-                                3
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Local Insight, Broader Reach</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                I understand the hustle of Atlanta and East Coast entrepreneurs — fast timelines, real goals.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mr-4">
-                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold" style="background-color: var(--warm-gold); color: var(--primary-navy);">
-                                4
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2" style="color: var(--primary-navy);">Quick Turnarounds</h3>
-                            <p class="text-gray-700 leading-relaxed">
-                                Need your store ready for the holidays? I work fast without cutting corners  typical projects wrap in 24 weeks.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section id="cta" class="gradient-bg py-20 text-white text-center">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                    Ready to Build Something Great?
-                </h2>
-                <p class="text-xl md:text-2xl mb-10 leading-relaxed">
-                    Don't let another month go by without a professional, sales-ready online store. Let's talk about your vision and make it real.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
-                       class="btn-primary inline-block px-10 py-5 rounded-lg font-bold text-xl shadow-2xl">
-                        Book a Free Consultation
-                    </a>
-                    <a href="tel:+18593970975"
-                       class="btn-secondary inline-block px-10 py-5 rounded-lg font-bold text-xl shadow-2xl">
-                        Call Now: 859-397-0975
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="py-20 bg-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        Common Questions
-                    </h2>
-                    <p class="text-xl text-gray-600">
-                        Here's what most business owners ask before we start.
-                    </p>
-                </div>
-
-                <div class="space-y-6">
-
-                    <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--primary-navy);">
-                            How long does it take to build a Shopify store?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Most projects take 24 weeks from start to launch, depending on complexity and how quickly you can provide content (product images, descriptions, etc.).
-                            
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--primary-navy);">
-                            Can you help if I already have a Shopify store?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Definitely. I handle redesigns, speed fixes, and optimizations.
-                            
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--primary-navy);">
-                            Do I have to be in Atlanta or New York to work with you?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Not at all — I work remotely with clients across the U.S., but I specialize in supporting Atlanta and East Coast entrepreneurs.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 rounded-lg p-6 shadow-md">
-                        <h3 class="text-xl font-bold mb-3" style="color: var(--primary-navy);">
-                            How do I get started?
-                        </h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Just fill out the form below or book a free call — I'll personally follow up within 24 hours.
-                            
-                            
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section id="contact" class="py-20" style="background-color: var(--light-bg);">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" style="color: var(--primary-navy);">
-                        Let's Talk About Your Store
-                    </h2>
-                    <p class="text-xl text-gray-600">
-                        Fill out the form below — I'll get back to you within one business day.
-                    </p>
-                    <p class="text-lg text-gray-600 mt-2">
-                        Or email me directly at
-                        <a href="mailto:hello@korantenganane.dev" class="font-bold hover:underline" style="color: var(--primary-blue);">hello@korantenganane.dev</a>
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-xl p-8 md:p-12">
-                    <form id="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST" novalidate>
-
-                        <!-- Success Message (hidden by default) -->
-                        <div id="success-message" class="success-message hidden mb-6" role="alert">
-                             Thanks for reaching out! I'll be in touch within 24 hours.
-                        </div>
-
-                        <!-- Error Message (hidden by default) -->
-                        <div id="error-message" class="error-message hidden mb-6" role="alert">
-                            Something went wrong. Please try again or email me directly.
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="name" class="block text-gray-700 font-bold mb-2">
-                                Your Name <span class="text-red-600">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
-                                aria-required="true"
-                            >
-                            <span class="error-message hidden" id="name-error">Please enter your name</span>
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="email" class="block text-gray-700 font-bold mb-2">
-                                Your Email <span class="text-red-600">*</span>
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
-                                aria-required="true"
-                            >
-                            <span class="error-message hidden" id="email-error">Please enter a valid email address</span>
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="business" class="block text-gray-700 font-bold mb-2">
-                                Business Name (optional)
-                            </label>
-                            <input
-                                type="text"
-                                id="business"
-                                name="business"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
-                            >
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-700 font-bold mb-2">
-                                Tell Me About Your Project <span class="text-red-600">*</span>
-                            </label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="6"
-                                required
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
-                                aria-required="true"
-                            ></textarea>
-                            <span class="error-message hidden" id="message-error">Please tell me a bit about your project</span>
-                        </div>
-
-                        <!-- Hidden UTM field -->
-                        <input type="hidden" name="utm_source" value="podcast">
-                        <input type="hidden" name="utm_medium" value="audio">
-                        <input type="hidden" name="utm_campaign" value="atlanta_holiday">
-
-                        <div class="text-center">
-                            <button
-                                type="submit"
-                                class="btn-primary px-10 py-4 rounded-lg font-bold text-xl shadow-lg w-full sm:w-auto"
-                            >
-                                Send Message
-                            </button>
-                        </div>
-
-                    </form>
-                </div>
-
-                <div class="text-center mt-8">
-                    <p class="text-gray-600 mb-4">Prefer to schedule a call instead?</p>
-                    <a href="https://calendly.com/koranteng/30min?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn-secondary inline-block px-8 py-3 rounded-lg font-bold text-lg shadow-lg">
-                        Book Your Free Consultation
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="gradient-bg text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-lg mb-2">
-                &copy; <span id="current-year"></span> Koranteng Anane  Shopify Developer
-            </p>
-            <p class="text-gray-300">
-                Serving Atlanta & beyond with custom e-commerce solutions
-            </p>
-            <div class="mt-6 space-x-6">
-                <a href="mailto:hello@korantenganane.dev" class="hover:text-yellow-300 transition">Email</a>
-                <a href="tel:+18593970975" class="hover:text-yellow-300 transition">Phone</a>
-                <a href="https://korantenganane.dev" class="hover:text-yellow-300 transition">Main Portfolio</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
-        });
-
-        // Close mobile menu when clicking a link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            });
-        });
-
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Form validation
-        const form = document.getElementById('contact-form');
-        const successMessage = document.getElementById('success-message');
-        const errorMessage = document.getElementById('error-message');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            // Clear previous messages
-            successMessage.classList.add('hidden');
-            errorMessage.classList.add('hidden');
-            document.querySelectorAll('.error-message').forEach(el => el.classList.add('hidden'));
-
-            // Validate form
-            let isValid = true;
-
-            const name = document.getElementById('name');
-            if (!name.value.trim()) {
-                document.getElementById('name-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            const email = document.getElementById('email');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email.value.trim() || !emailRegex.test(email.value)) {
-                document.getElementById('email-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            const message = document.getElementById('message');
-            if (!message.value.trim()) {
-                document.getElementById('message-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (!isValid) {
-                return;
-            }
-
-            // Submit form via Formspree
-            try {
-                const formData = new FormData(form);
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    successMessage.classList.remove('hidden');
-                    form.reset();
-                    // Scroll to success message
-                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                } else {
-                    errorMessage.classList.remove('hidden');
-                }
-            } catch (error) {
-                errorMessage.classList.remove('hidden');
-            }
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                // Remove UTM parameters for scroll target
-                const targetId = href.split('?')[0];
-
-                if (targetId === '#') return;
-
-                const target = document.querySelector(targetId);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Helping Atlanta entrepreneurs build Shopify stores that sell. Custom e-commerce development from an experienced Shopify developer who understands small business. Get your store ready for the holidays."
+		/>
+		<meta
+			name="author"
+			content="Koranteng Anane"
+		/>
+		<title>
+			Atlanta Shopify Developer | Koranteng Anane | Custom E-commerce Stores
+		</title>
+		<link
+			rel="canonical"
+			href="https://korantenganane.dev/atlanta"
+		/>
+
+		<!-- Open Graph Meta Tags -->
+		<meta
+			property="og:title"
+			content="Atlanta Shopify Developer | Koranteng Anane"
+		/>
+		<meta
+			property="og:description"
+			content="Helping Atlanta entrepreneurs build Shopify stores that sell. Custom e-commerce development from an experienced developer who understands small business."
+		/>
+		<meta
+			property="og:url"
+			content="https://korantenganane.dev/atlanta"
+		/>
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<meta
+			property="og:image"
+			content="https://korantenganane.dev/Imgs/atlanta-og.png"
+		/>
+		<meta
+			property="og:site_name"
+			content="Koranteng Anane - Shopify Developer"
+		/>
+
+		<!-- Twitter Card Meta Tags -->
+		<meta
+			name="twitter:card"
+			content="summary_large_image"
+		/>
+		<meta
+			name="twitter:title"
+			content="Atlanta Shopify Developer | Koranteng Anane"
+		/>
+		<meta
+			name="twitter:description"
+			content="Helping Atlanta entrepreneurs build Shopify stores that sell. Custom e-commerce development for Atlanta businesses."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://korantenganane.dev/Imgs/atlanta-og.png"
+		/>
+
+		<!-- Preconnect for performance -->
+		<link
+			rel="preconnect"
+			href="https://cdn.tailwindcss.com"
+		/>
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- JSON-LD Schema -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ProfessionalService",
+				"name": "Koranteng Anane  Shopify Developer",
+				"image": "https://korantenganane.dev/Imgs/atlanta-og.png",
+				"description": "Shopify development services for Atlanta entrepreneurs and small businesses",
+				"areaServed": {
+					"@type": "City",
+					"name": "Atlanta",
+					"address": {
+						"@type": "PostalAddress",
+						"addressRegion": "GA",
+						"addressCountry": "US"
+					}
+				},
+				"url": "https://korantenganane.dev/atlanta",
+				"telephone": "+1-‭404-946-8479‬",
+				"email": "hello@korantenganane.dev",
+				"priceRange": "$$"
+			}
+		</script>
+
+		<style>
+			/* Local Font Declarations */
+			@font-face {
+				font-family: "Work Sans";
+				src: url("fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+				font-weight: 100 900;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: "JetBrains Mono";
+				src: url("fonts/JetBrainsMono-VariableFont_wght.ttf")
+					format("truetype");
+				font-weight: 100 900;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: "Sacramento";
+				src: url("fonts/Sacramento-Regular.ttf") format("truetype");
+				font-weight: normal;
+				font-display: swap;
+			}
+
+			:root {
+				--primary-navy: #1d3557;
+				--primary-blue: #457b9d;
+				--accent-teal: #17a2b8;
+				--warm-gold: #f4a261;
+				--warm-peach: #e76f51;
+				--light-bg: #f8f9fa;
+				--dark-text: #212529;
+			}
+
+			body {
+				font-family: "JetBrains Mono", monospace;
+				color: var(--dark-text);
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "Work Sans", sans-serif;
+			}
+
+			.font-display {
+				font-family: "Sacramento", cursive;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			.nav-sticky {
+				position: sticky;
+				top: 0;
+				z-index: 50;
+				background: rgba(29, 53, 87, 0.95);
+				backdrop-filter: blur(10px);
+			}
+
+			.btn-primary {
+				background: var(--warm-gold);
+				color: var(--primary-navy);
+				transition: all 0.3s ease;
+			}
+
+			.btn-primary:hover {
+				background: var(--warm-peach);
+				transform: translateY(-2px);
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+			}
+
+			.btn-secondary {
+				background: var(--primary-blue);
+				color: white;
+				transition: all 0.3s ease;
+			}
+
+			.btn-secondary:hover {
+				background: var(--primary-navy);
+				transform: translateY(-2px);
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+			}
+
+			.gradient-bg {
+				background: linear-gradient(
+					135deg,
+					var(--primary-navy) 0%,
+					var(--primary-blue) 100%
+				);
+			}
+
+			.hero-pattern {
+				background-color: #1d3557;
+				background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23457b9d' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+			}
+
+			.card-hover {
+				transition: all 0.3s ease;
+			}
+
+			.card-hover:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+			}
+
+			.placeholder-img {
+				background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #999;
+				font-size: 1rem;
+			}
+
+			input:focus,
+			textarea:focus {
+				outline: none;
+				border-color: var(--warm-gold);
+				ring: 2px;
+				ring-color: var(--warm-gold);
+			}
+
+			.skip-link {
+				position: absolute;
+				top: -40px;
+				left: 0;
+				background: var(--warm-gold);
+				color: var(--primary-navy);
+				padding: 8px;
+				text-decoration: none;
+				z-index: 100;
+			}
+
+			.skip-link:focus {
+				top: 0;
+			}
+
+			/* Form validation styles */
+			.error-message {
+				color: #dc3545;
+				font-size: 0.875rem;
+				margin-top: 0.25rem;
+			}
+
+			.success-message {
+				color: #28a745;
+				font-size: 1rem;
+				padding: 1rem;
+				background: #d4edda;
+				border-radius: 0.5rem;
+			}
+
+			@media (max-width: 768px) {
+				.hero-title {
+					font-size: 2rem;
+				}
+			}
+		</style>
+	</head>
+	<body class="antialiased">
+		<!-- Skip Link for Accessibility -->
+		<a
+			href="#main-content"
+			class="skip-link"
+			>Skip to main content</a
+		>
+
+		<!-- Sticky Navigation -->
+		<nav
+			class="nav-sticky"
+			role="navigation"
+			aria-label="Main navigation"
+		>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center h-16">
+					<div class="flex-shrink-0">
+						<span class="text-white text-xl font-bold">
+							<span class="font-display text-3xl text-yellow-300"
+								>Koranteng</span
+							>
+						</span>
+					</div>
+					<div class="hidden md:flex space-x-6 text-sm">
+						<a
+							href="#about"
+							class="text-white hover:text-yellow-300 transition"
+							>About</a
+						>
+						<a
+							href="#services"
+							class="text-white hover:text-yellow-300 transition"
+							>Services</a
+						>
+						<a
+							href="#work"
+							class="text-white hover:text-yellow-300 transition"
+							>Work</a
+						>
+						<a
+							href="#why"
+							class="text-white hover:text-yellow-300 transition"
+							>Why Me</a
+						>
+						<a
+							href="#faq"
+							class="text-white hover:text-yellow-300 transition"
+							>FAQ</a
+						>
+						<a
+							href="#contact"
+							class="text-white hover:text-yellow-300 transition"
+							>Contact</a
+						>
+					</div>
+					<div class="flex md:hidden">
+						<button
+							id="mobile-menu-btn"
+							class="text-white"
+							aria-label="Toggle mobile menu"
+							aria-expanded="false"
+						>
+							<svg
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16M4 18h16"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile menu -->
+			<div
+				id="mobile-menu"
+				class="hidden md:hidden bg-blue-900 px-4 pt-2 pb-4 space-y-2"
+			>
+				<a
+					href="#about"
+					class="block text-white hover:text-yellow-300 py-2"
+					>About</a
+				>
+				<a
+					href="#services"
+					class="block text-white hover:text-yellow-300 py-2"
+					>Services</a
+				>
+				<a
+					href="#work"
+					class="block text-white hover:text-yellow-300 py-2"
+					>Work</a
+				>
+				<a
+					href="#why"
+					class="block text-white hover:text-yellow-300 py-2"
+					>Why Me</a
+				>
+				<a
+					href="#faq"
+					class="block text-white hover:text-yellow-300 py-2"
+					>FAQ</a
+				>
+				<a
+					href="#contact"
+					class="block text-white hover:text-yellow-300 py-2"
+					>Contact</a
+				>
+			</div>
+		</nav>
+
+		<main id="main-content">
+			<!-- Hero Section -->
+			<section
+				id="hero"
+				class="hero-pattern text-white py-20 md:py-32"
+			>
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="grid md:grid-cols-2 gap-12 items-center">
+						<div>
+							<h1
+								class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+							>
+								Helping Atlanta & East Coast Entrepreneurs Build Shopify
+								Stores That Sell
+							</h1>
+							<p
+								class="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed"
+							>
+								Bring your business online with a custom Shopify store
+								built for growth — from a developer with 4+ years of
+								agency experience and a focus on real results.
+							</p>
+							<div class="flex flex-col sm:flex-row gap-4 mb-8">
+								<a
+									href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
+									class="btn-primary inline-block px-8 py-4 rounded-lg font-bold text-lg text-center shadow-lg"
+								>
+									Book a Free Consultation
+								</a>
+								<a
+									href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
+									class="btn-secondary inline-block px-8 py-4 rounded-lg font-bold text-lg text-center shadow-lg"
+								>
+									Send a Quick Message
+								</a>
+							</div>
+							<p class="text-sm text-gray-300 italic">
+								 Trusted by small business owners nationwide
+								&nbsp;|&nbsp;  4+ years Shopify experience &nbsp;|&nbsp;
+								 Fast holiday delivery timelines
+							</p>
+						</div>
+						<div class="hidden md:block">
+							<div
+								class="placeholder-img rounded-lg h-96 shadow-2xl"
+								style="min-height: 400px"
+							>
+								<!-- HERO_IMAGE_URL placeholder -->
+								<span class="text-gray-400">Hero Image</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Section -->
+			<section
+				id="about"
+				class="py-20 bg-white"
+			>
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="grid md:grid-cols-2 gap-12 items-center">
+						<div>
+							<h2
+								class="text-4xl md:text-5xl font-bold mb-6"
+								style="color: var(--primary-navy)"
+							>
+								Your Partner in E-Commerce Success
+							</h2>
+							<div
+								class="space-y-4 text-lg leading-relaxed text-gray-700"
+							>
+								<p>
+									I'm <strong>Koranteng Anane</strong>, a Shopify
+									developer with over four years of hands-on experience
+									building and optimizing online stores for agencies
+									and brands across the country.
+								</p>
+								<p>
+									Now I'm bringing that same agency-level quality
+									directly to Atlanta, New York, and other East Coast
+									entrepreneurs who want to grow online without the
+									big-agency price tag.
+								</p>
+								<p>
+									I know what it's like to hustle — to build something
+									from the ground up and need a tech partner who
+									actually listens, delivers, and cares about your
+									success.
+								</p>
+								<p>
+									<strong
+										>The holidays are right around the corner.</strong
+									>
+									Let's make sure your Shopify store is ready to
+									capture traffic and turn browsers into buyers.
+								</p>
+							</div>
+							<div class="mt-8">
+								<p
+									class="text-sm font-semibold"
+									style="color: var(--primary-blue)"
+								>
+									=� Based remotely, focused on Atlanta
+								</p>
+								<p
+									class="text-sm font-semibold"
+									style="color: var(--primary-blue)"
+								>
+									=�
+									<a
+										href="tel:+1‭4049468479‬"
+										class="hover:underline"
+										>‭404-946-8479‬</a
+									>
+								</p>
+								<p
+									class="text-sm font-semibold"
+									style="color: var(--primary-blue)"
+								>
+									
+									<a
+										href="mailto:hello@korantenganane.dev"
+										class="hover:underline"
+										>hello@korantenganane.dev</a
+									>
+								</p>
+							</div>
+						</div>
+						<div class="order-first md:order-last">
+							<div class="placeholder-img rounded-lg h-96 shadow-xl">
+								<span class="text-gray-400">About Image</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services Section -->
+			<section
+				id="services"
+				class="py-20"
+				style="background-color: var(--light-bg)"
+			>
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2
+							class="text-4xl md:text-5xl font-bold mb-4"
+							style="color: var(--primary-navy)"
+						>
+							What I Can Do for Your Business
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+							From startup to scale-up — I help small brands look and
+							perform like big ones.
+						</p>
+					</div>
+
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						<!-- Service 1 -->
+						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+							<div class="text-5xl mb-4">=�</div>
+							<h3
+								class="text-2xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Complete Store Setup
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								From domain to checkout, I'll build your Shopify store
+								from scratch  product pages, collections, navigation,
+								payments, and more.
+							</p>
+						</div>
+
+						<!-- Service 2 -->
+						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+							<div class="text-5xl mb-4"><�</div>
+							<h3
+								class="text-2xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Theme Redesigns
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Already selling but not converting? I'll redesign your
+								store for a modern, professional, and high-performing
+								experience.
+							</p>
+						</div>
+
+						<!-- Service 3 -->
+						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+							<div class="text-5xl mb-4">�</div>
+							<h3
+								class="text-2xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Speed Optimization
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Slow stores lose sales. I'll clean up your code and
+								images to improve load times and conversion rates.
+							</p>
+						</div>
+
+						<!-- Service 4 -->
+						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+							<div class="text-5xl mb-4">=�</div>
+							<h3
+								class="text-2xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Mobile Polish
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								70% of traffic comes from phones. I'll make sure your
+								site looks and performs perfectly on mobile.
+							</p>
+						</div>
+
+						<!-- Service 5 -->
+						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+							<div class="text-5xl mb-4">=</div>
+							<h3
+								class="text-2xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Platform Migration
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Moving from Wix or Squarespace? I'll migrate your
+								products and design seamlessly to Shopify.
+							</p>
+						</div>
+
+						<!-- Service 6 -->
+						<div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+							<div class="text-5xl mb-4">='</div>
+							<h3
+								class="text-2xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Apps & Integrations
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Subscriptions, upsells, or Klaviyo email flows — I'll
+								integrate the right tools to grow your sales.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Work/Proof Section -->
+			<section
+				id="work"
+				class="py-20 bg-white"
+			>
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2
+							class="text-4xl md:text-5xl font-bold mb-4"
+							style="color: var(--primary-navy)"
+						>
+							Results That Speak for Themselves
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+							Here's a snapshot of what I've delivered on recent Shopify
+							projects:
+						</p>
+					</div>
+
+					<div class="grid md:grid-cols-3 gap-8 mb-12">
+						<div class="placeholder-img rounded-lg h-64 shadow-lg">
+							<span class="text-gray-400">WORK_IMAGE_1</span>
+						</div>
+						<div class="placeholder-img rounded-lg h-64 shadow-lg">
+							<span class="text-gray-400">WORK_IMAGE_2</span>
+						</div>
+						<div class="placeholder-img rounded-lg h-64 shadow-lg">
+							<span class="text-gray-400">WORK_IMAGE_3</span>
+						</div>
+					</div>
+
+					<div class="grid md:grid-cols-2 gap-8">
+						<div class="bg-gray-50 rounded-lg p-8">
+							<h3
+								class="text-2xl font-bold mb-4"
+								style="color: var(--primary-navy)"
+							>
+								Performance Wins
+							</h3>
+							<ul class="space-y-3 text-gray-700">
+								<li class="flex items-start">
+									<span class="text-green-600 mr-2 text-xl"></span>
+									<span
+										>Improved mobile performance scores from 40s to
+										90+</span
+									>
+								</li>
+								<li class="flex items-start">
+									<span class="text-green-600 mr-2 text-xl"></span>
+									<span
+										>Reduced page load times by 50% through smart code
+										optimization</span
+									>
+								</li>
+								<li class="flex items-start">
+									<span class="text-green-600 mr-2 text-xl"></span>
+									<span
+										>Built custom product galleries with advanced
+										variant logic</span
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="bg-gray-50 rounded-lg p-8">
+							<h3
+								class="text-2xl font-bold mb-4"
+								style="color: var(--primary-navy)"
+							>
+								Technical Highlights
+							</h3>
+							<ul class="space-y-3 text-gray-700">
+								<li class="flex items-start">
+									<span class="text-green-600 mr-2 text-xl"></span>
+									<span
+										>Automated bulk product imports, saving 100+ hours
+										of manual work</span
+									>
+								</li>
+								<li class="flex items-start">
+									<span class="text-green-600 mr-2 text-xl"></span>
+									<span
+										>Integrated subscription and upsell apps with
+										custom checkout flows</span
+									>
+								</li>
+								<li class="flex items-start">
+									<span class="text-green-600 mr-2 text-xl"></span>
+									<span
+										>Built fully responsive themes optimized for every
+										device</span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Work With Me Section -->
+			<section
+				id="why"
+				class="py-20"
+				style="background-color: var(--light-bg)"
+			>
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2
+							class="text-4xl md:text-5xl font-bold mb-4"
+							style="color: var(--primary-navy)"
+						>
+							Why Work With Me Instead of an Agency
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+							Agency-level quality. Solo-level attention.
+						</p>
+					</div>
+
+					<div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4">
+								<div
+									class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold"
+									style="
+										background-color: var(--warm-gold);
+										color: var(--primary-navy);
+									"
+								>
+									1
+								</div>
+							</div>
+							<div>
+								<h3
+									class="text-2xl font-bold mb-2"
+									style="color: var(--primary-navy)"
+								>
+									Direct Communication
+								</h3>
+								<p class="text-gray-700 leading-relaxed">
+									You'll work with me one-on-one. No account managers
+									or delays.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4">
+								<div
+									class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold"
+									style="
+										background-color: var(--warm-gold);
+										color: var(--primary-navy);
+									"
+								>
+									2
+								</div>
+							</div>
+							<div>
+								<h3
+									class="text-2xl font-bold mb-2"
+									style="color: var(--primary-navy)"
+								>
+									Agency-Level Quality
+								</h3>
+								<p class="text-gray-700 leading-relaxed">
+									I've built stores for major brands through top U.S.
+									agencies — the same quality, less red tape.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4">
+								<div
+									class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold"
+									style="
+										background-color: var(--warm-gold);
+										color: var(--primary-navy);
+									"
+								>
+									3
+								</div>
+							</div>
+							<div>
+								<h3
+									class="text-2xl font-bold mb-2"
+									style="color: var(--primary-navy)"
+								>
+									Local Insight, Broader Reach
+								</h3>
+								<p class="text-gray-700 leading-relaxed">
+									I understand the hustle of Atlanta and East Coast
+									entrepreneurs — fast timelines, real goals.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4">
+								<div
+									class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl font-bold"
+									style="
+										background-color: var(--warm-gold);
+										color: var(--primary-navy);
+									"
+								>
+									4
+								</div>
+							</div>
+							<div>
+								<h3
+									class="text-2xl font-bold mb-2"
+									style="color: var(--primary-navy)"
+								>
+									Quick Turnarounds
+								</h3>
+								<p class="text-gray-700 leading-relaxed">
+									Need your store ready for the holidays? I work fast
+									without cutting corners  typical projects wrap in 24
+									weeks.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section
+				id="cta"
+				class="gradient-bg py-20 text-white text-center"
+			>
+				<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+					<h2 class="text-4xl md:text-5xl font-bold mb-6">
+						Ready to Build Something Great?
+					</h2>
+					<p class="text-xl md:text-2xl mb-10 leading-relaxed">
+						Don't let another month go by without a professional,
+						sales-ready online store. Let's talk about your vision and
+						make it real.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+						<a
+							href="#contact?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
+							class="btn-primary inline-block px-10 py-5 rounded-lg font-bold text-xl shadow-2xl"
+						>
+							Book a Free Consultation
+						</a>
+						<a
+							href="tel:+1‭4049468479‬"
+							class="btn-secondary inline-block px-10 py-5 rounded-lg font-bold text-xl shadow-2xl"
+						>
+							Call Now: ‭404-946-8479‬
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ Section -->
+			<section
+				id="faq"
+				class="py-20 bg-white"
+			>
+				<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16">
+						<h2
+							class="text-4xl md:text-5xl font-bold mb-4"
+							style="color: var(--primary-navy)"
+						>
+							Common Questions
+						</h2>
+						<p class="text-xl text-gray-600">
+							Here's what most business owners ask before we start.
+						</p>
+					</div>
+
+					<div class="space-y-6">
+						<div class="bg-gray-50 rounded-lg p-6 shadow-md">
+							<h3
+								class="text-xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								How long does it take to build a Shopify store?
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Most projects take 24 weeks from start to launch,
+								depending on complexity and how quickly you can provide
+								content (product images, descriptions, etc.).
+							</p>
+						</div>
+
+						<div class="bg-gray-50 rounded-lg p-6 shadow-md">
+							<h3
+								class="text-xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Can you help if I already have a Shopify store?
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Definitely. I handle redesigns, speed fixes, and
+								optimizations.
+							</p>
+						</div>
+
+						<div class="bg-gray-50 rounded-lg p-6 shadow-md">
+							<h3
+								class="text-xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								Do I have to be in Atlanta or New York to work with you?
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Not at all — I work remotely with clients across the
+								U.S., but I specialize in supporting Atlanta and East
+								Coast entrepreneurs.
+							</p>
+						</div>
+
+						<div class="bg-gray-50 rounded-lg p-6 shadow-md">
+							<h3
+								class="text-xl font-bold mb-3"
+								style="color: var(--primary-navy)"
+							>
+								How do I get started?
+							</h3>
+							<p class="text-gray-700 leading-relaxed">
+								Just fill out the form below or book a free call — I'll
+								personally follow up within 24 hours.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Form Section -->
+			<section
+				id="contact"
+				class="py-20"
+				style="background-color: var(--light-bg)"
+			>
+				<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-12">
+						<h2
+							class="text-4xl md:text-5xl font-bold mb-4"
+							style="color: var(--primary-navy)"
+						>
+							Let's Talk About Your Store
+						</h2>
+						<p class="text-xl text-gray-600">
+							Fill out the form below — I'll get back to you within one
+							business day.
+						</p>
+						<p class="text-lg text-gray-600 mt-2">
+							Or email me directly at
+							<a
+								href="mailto:hello@korantenganane.dev"
+								class="font-bold hover:underline"
+								style="color: var(--primary-blue)"
+								>hello@korantenganane.dev</a
+							>
+						</p>
+					</div>
+
+					<div class="bg-white rounded-lg shadow-xl p-8 md:p-12">
+						<form
+							id="contact-form"
+							action="https://formspree.io/f/FORMSPREE_ID"
+							method="POST"
+							novalidate
+						>
+							<!-- Success Message (hidden by default) -->
+							<div
+								id="success-message"
+								class="success-message hidden mb-6"
+								role="alert"
+							>
+								 Thanks for reaching out! I'll be in touch within 24
+								hours.
+							</div>
+
+							<!-- Error Message (hidden by default) -->
+							<div
+								id="error-message"
+								class="error-message hidden mb-6"
+								role="alert"
+							>
+								Something went wrong. Please try again or email me
+								directly.
+							</div>
+
+							<div class="mb-6">
+								<label
+									for="name"
+									class="block text-gray-700 font-bold mb-2"
+								>
+									Your Name <span class="text-red-600">*</span>
+								</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									required
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
+									aria-required="true"
+								/>
+								<span
+									class="error-message hidden"
+									id="name-error"
+									>Please enter your name</span
+								>
+							</div>
+
+							<div class="mb-6">
+								<label
+									for="email"
+									class="block text-gray-700 font-bold mb-2"
+								>
+									Your Email <span class="text-red-600">*</span>
+								</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									required
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
+									aria-required="true"
+								/>
+								<span
+									class="error-message hidden"
+									id="email-error"
+									>Please enter a valid email address</span
+								>
+							</div>
+
+							<div class="mb-6">
+								<label
+									for="business"
+									class="block text-gray-700 font-bold mb-2"
+								>
+									Business Name (optional)
+								</label>
+								<input
+									type="text"
+									id="business"
+									name="business"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
+								/>
+							</div>
+
+							<div class="mb-6">
+								<label
+									for="message"
+									class="block text-gray-700 font-bold mb-2"
+								>
+									Tell Me About Your Project
+									<span class="text-red-600">*</span>
+								</label>
+								<textarea
+									id="message"
+									name="message"
+									rows="6"
+									required
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 transition"
+									aria-required="true"
+								></textarea>
+								<span
+									class="error-message hidden"
+									id="message-error"
+									>Please tell me a bit about your project</span
+								>
+							</div>
+
+							<!-- Hidden UTM field -->
+							<input
+								type="hidden"
+								name="utm_source"
+								value="podcast"
+							/>
+							<input
+								type="hidden"
+								name="utm_medium"
+								value="audio"
+							/>
+							<input
+								type="hidden"
+								name="utm_campaign"
+								value="atlanta_holiday"
+							/>
+
+							<div class="text-center">
+								<button
+									type="submit"
+									class="btn-primary px-10 py-4 rounded-lg font-bold text-xl shadow-lg w-full sm:w-auto"
+								>
+									Send Message
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="text-center mt-8">
+						<p class="text-gray-600 mb-4">
+							Prefer to schedule a call instead?
+						</p>
+						<a
+							href="https://calendly.com/koranteng/30min?utm_source=podcast&utm_medium=audio&utm_campaign=atlanta_holiday"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn-secondary inline-block px-8 py-3 rounded-lg font-bold text-lg shadow-lg"
+						>
+							Book Your Free Consultation
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="gradient-bg text-white py-12">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<p class="text-lg mb-2">
+					&copy; <span id="current-year"></span> Koranteng Anane  Shopify
+					Developer
+				</p>
+				<p class="text-gray-300">
+					Serving Atlanta & beyond with custom e-commerce solutions
+				</p>
+				<div class="mt-6 space-x-6">
+					<a
+						href="mailto:hello@korantenganane.dev"
+						class="hover:text-yellow-300 transition"
+						>Email</a
+					>
+					<a
+						href="tel:+1‭4049468479‬"
+						class="hover:text-yellow-300 transition"
+						>Phone</a
+					>
+					<a
+						href="https://korantenganane.dev"
+						class="hover:text-yellow-300 transition"
+						>Main Portfolio</a
+					>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script>
+			// Mobile menu toggle
+			const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+			const mobileMenu = document.getElementById("mobile-menu");
+
+			mobileMenuBtn.addEventListener("click", () => {
+				mobileMenu.classList.toggle("hidden");
+				const isExpanded =
+					mobileMenuBtn.getAttribute("aria-expanded") === "true";
+				mobileMenuBtn.setAttribute("aria-expanded", !isExpanded);
+			});
+
+			// Close mobile menu when clicking a link
+			const mobileLinks = mobileMenu.querySelectorAll("a");
+			mobileLinks.forEach(link => {
+				link.addEventListener("click", () => {
+					mobileMenu.classList.add("hidden");
+					mobileMenuBtn.setAttribute("aria-expanded", "false");
+				});
+			});
+
+			// Update copyright year
+			document.getElementById("current-year").textContent =
+				new Date().getFullYear();
+
+			// Form validation
+			const form = document.getElementById("contact-form");
+			const successMessage = document.getElementById("success-message");
+			const errorMessage = document.getElementById("error-message");
+
+			form.addEventListener("submit", async e => {
+				e.preventDefault();
+
+				// Clear previous messages
+				successMessage.classList.add("hidden");
+				errorMessage.classList.add("hidden");
+				document
+					.querySelectorAll(".error-message")
+					.forEach(el => el.classList.add("hidden"));
+
+				// Validate form
+				let isValid = true;
+
+				const name = document.getElementById("name");
+				if (!name.value.trim()) {
+					document.getElementById("name-error").classList.remove("hidden");
+					isValid = false;
+				}
+
+				const email = document.getElementById("email");
+				const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (!email.value.trim() || !emailRegex.test(email.value)) {
+					document
+						.getElementById("email-error")
+						.classList.remove("hidden");
+					isValid = false;
+				}
+
+				const message = document.getElementById("message");
+				if (!message.value.trim()) {
+					document
+						.getElementById("message-error")
+						.classList.remove("hidden");
+					isValid = false;
+				}
+
+				if (!isValid) {
+					return;
+				}
+
+				// Submit form via Formspree
+				try {
+					const formData = new FormData(form);
+					const response = await fetch(form.action, {
+						method: "POST",
+						body: formData,
+						headers: {
+							Accept: "application/json",
+						},
+					});
+
+					if (response.ok) {
+						successMessage.classList.remove("hidden");
+						form.reset();
+						// Scroll to success message
+						successMessage.scrollIntoView({
+							behavior: "smooth",
+							block: "center",
+						});
+					} else {
+						errorMessage.classList.remove("hidden");
+					}
+				} catch (error) {
+					errorMessage.classList.remove("hidden");
+				}
+			});
+
+			// Smooth scroll for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener("click", function (e) {
+					const href = this.getAttribute("href");
+					// Remove UTM parameters for scroll target
+					const targetId = href.split("?")[0];
+
+					if (targetId === "#") return;
+
+					const target = document.querySelector(targetId);
+					if (target) {
+						e.preventDefault();
+						target.scrollIntoView({
+							behavior: "smooth",
+							block: "start",
+						});
+					}
+				});
+			});
+		</script>
+	</body>
 </html>
